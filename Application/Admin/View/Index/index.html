@@ -1,0 +1,33 @@
+<include file="Application/Admin/View/Index/header.html" />
+<body>
+
+<div class="container clearfix">
+    <div class="sidebar-wrap">
+        <div class="sidebar-title">
+            <h1>菜单</h1>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-list">
+                <li>
+                    <a href="#"><i class="icon-font">&#xe003;</i>常用操作</a>
+                    <ul class="sub-menu">
+                    	<li><a href="/Admin/Branch"><i class="icon-font">&#xe008;</i>活动机构</a></li>
+                        <li><a href="/Admin/Prize"><i class="icon-font">&#xe008;</i>奖品管理</a></li>
+                        <li><a href="/Admin/Activity"><i class="icon-font">&#xe008;</i>活动设置</a></li>
+                    </ul>
+                </li>
+                                <li>
+                    <a href="/Admin/Prizereport"><i class="icon-font">&#xe003;</i>报表</a>
+                    <ul class="sub-menu">
+                              <volist name="branch_info" id="i">
+                    	<li><a href="/Admin/Prizereport?type_id={$i.type_id}"><i class="icon-font">&#xe008;</i>{$i.name}报表</a></li>
+                        </volist>
+                    </ul>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+      <div class="crumb-wrap">
+    <div class="crumb-list" style="position: relative;"><i class="icon-font"></i><a href="index.html" color="#white">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name"></span><a style="position: absolute;right: 5%;" href="" color="#white" onClick="login_out()">退出</a></div>
+  </div>

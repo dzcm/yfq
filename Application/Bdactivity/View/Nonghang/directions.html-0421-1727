@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中国农业银行 张家口分行</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+		<meta name="format-detection" content="telephone=NO">
+		<meta name="apple-touch-fullscreen" content="YES"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="HandheldFriendly" content="True">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/bdnonghang/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/bdnonghang/css/index.css"/>
+		<script>
+        (function(win,doc){
+            function change(){
+                doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            }
+            change();
+            win.addEventListener('resize',change,false);
+        })(window,document);
+    </script>
+	</head>
+	<body class="jinnang">
+		<img src="__PUBLIC__/bdnonghang/images/jinone.jpg">
+		<img src="__PUBLIC__/bdnonghang/images/jintwo.jpg">
+		<img src="__PUBLIC__/bdnonghang/images/jinthree.jpg">
+	</body>
+</html>

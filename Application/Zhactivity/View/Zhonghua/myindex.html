@@ -1,0 +1,276 @@
+<html>
+<head>
+<meta name="save" content="history" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="__PUBLIC__/zhonghua/css/main.css" />
+<link rel="stylesheet" href="__PUBLIC__/zhonghua/css/rain.css" />
+<script type="text/javascript" src="__PUBLIC__/zhonghua/js/jquery.min.js" ></script>
+          <script src="__PUBLIC__/js/jquery.js"></script>
+      <script  src="__PUBLIC__/js/layer_mobile/layer.js"></script>
+<title>抢红包</title>
+<!-- musics.mp3 -->
+<bgsound src="__PUBLIC__/zhonghua/images/musics.mp3" loop="-1">
+</head>
+<script>
+        (function(win,doc){
+            function change(){
+                doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            }
+            change();
+            win.addEventListener('resize',change,false);
+        })(window,document);
+ </script>
+<script>
+
+	function codefans(){
+		   $("#three").fadeOut()
+		 }
+		 function codetwoin(){
+		   $("#two").fadeIn()
+		 }
+		 function codetwoout(){
+		   $("#two").fadeOut()
+		 }
+		 function codeonein(){
+		   $("#one").fadeIn()
+		 }
+		 function codeoneout(){
+		   $("#one").fadeOut()
+		 }
+		 function codeblackin(){
+		   $("#black").fadeIn()
+		 }
+		 function codeblackout(){
+		   $("#black").fadeOut()
+		 }
+		 function codewrapin(){
+		   $("#page_rain").fadeIn()
+		 }
+		 setTimeout("codefans()",1300);
+		 setTimeout("codetwoin()",1400);
+		 setTimeout("codetwoout()",2300);
+		 setTimeout("codeonein()",2400);
+		 setTimeout("codeoneout()",3400);
+		 setTimeout("codeblackin()",3600);
+		 setTimeout("codeblackout()",5600);
+		 setTimeout("snow()",5700); 
+		 setTimeout("codewrapin()",3600);
+	var a =0;
+	var Timerr = setInterval(aa,300);
+	var removepackage = setInterval(function(){
+				for(var jj=0;jj<$('.div>div').size()/4;jj++){
+				$('.div>div').eq($('.div>div').size()-jj).remove();
+				}
+			},1000)
+	function aa(){
+		for(var i=0;i<15;i++){
+		var m=parseInt(Math.random()*700+100);
+		var j2=parseInt(Math.random()*300+1200);
+		var j=parseInt(Math.random()*1600-100);
+		var j1=parseInt(Math.random()*300+300);
+		var n=parseInt(Math.random()*10+(-10));
+		if(j>$(window).width()){
+			j=$(window).width()-parseInt(Math.random())*100;
+			}
+		$('.div').prepend('<div class="dd"></div>');
+		$('.div').children('div').eq(0).css({'left':j,'top':n});
+		//$('.div').children('div').eq(0).animate({'left':j-j1,'top':$(window).height()+20},3000);
+		$('.div').children('div').eq(0).css("transform",'translate3d(0,'+$(window).height()+20+'px,0)');
+		$('.div').children('div').eq(0).css("transition",'all 60000ms');
+		}
+		}
+ 
+</script>
+<body>
+	<div class="num-img" id="three" style="width:"></div>
+	<div class="num-img" id="two" style="display:none"></div>
+	<div class="num-img" id="one" style="display:none"></div>
+	<div class="clicks1" id="clicks1" style="display:none">
+		<img src="__PUBLIC__/zhonghua/images/clicks.png">
+	</div>
+	<div class="clickopen" id="clickopen" style="display:none">
+		<img src="__PUBLIC__/zhonghua/images/clickopen.png">
+	</div>
+	<div class="wap-blank" id="black" style="display:none; z-index:999; width:100%; height:100%; position:absolute; top:0; left:0; background:rgba(255,255,255,0);"></div>
+<div class="page_rain" id="page_rain" style="display:none">
+	<div class="div bg_1">
+
+    </div>
+	 
+	<!-- <div class="chuai_box" style="display: none;"> -->
+		<!-- <div class="chuai"> -->
+			<!-- <p>常州克里斯特尔斯甜品店红包</p> -->
+		<!-- </div> -->
+	<!-- </div> -->
+	
+	
+	
+	<!-- 用完次数开始	 -->
+		<div class="tooltip use-up">			 
+			<div  class="wap-tc">
+				<img src="__PUBLIC__/zhonghua/images/ufo.png" class="wap-tc-pic">				 
+				<p class="wap-tc-title">
+					对不起！<br />
+					今天您的抢红包次数已用完！<br />
+					明天继续再战吧！
+				</p>
+				<a href="http://yfq.sjzdezhong.com/Zhactivity/Index?sub=1"><img src="__PUBLIC__/zhonghua/images/know.jpg" class="wap-tc-s3"></a>				
+			</div> 
+			<div class="extract">
+				<a href="/Zhactivity/Prize/myprize" class="wrap-share left">
+					<img src="__PUBLIC__/zhonghua/images/hongbao.png">
+				</a>
+				<a href="javascript:;" class="wrap-share left wap-share">
+					<img src="__PUBLIC__/zhonghua/images/share.png">
+				</a>
+			</div> 
+		</div>	
+<!-- 用完次数结束	 -->
+
+<!-- 没有中奖开始	 -->
+		<div class="tooltip confirm">			 
+			<div  class="wap-tc">
+				<img src="__PUBLIC__/zhonghua/images/prizeless.png" class="wap-tc-pic2">				 
+				<p class="wap-tc-title">
+					就差一点点，别放弃<br />
+					更多大奖等着你哦！
+				</p>
+				<a href="#"><img src="__PUBLIC__/zhonghua/images/know.jpg" class="wap-tc-s3"></a>				
+			</div> 
+			<div class="extract">
+				<a href="/Zhactivity/Prize/myprize" class="wrap-share left">
+					<img src="__PUBLIC__/zhonghua/images/hongbao.png">
+				</a>
+				<a href="javascript:;" class="wrap-share left wap-share">
+					<img src="__PUBLIC__/zhonghua/images/share.png">
+				</a>
+			</div> 
+		</div>	
+	<!-- 没有中奖结束	 -->
+
+	<!-- 中奖开始	 -->
+		<div class="tooltip zhongjiang">			 
+			<div  class="wap-tc1"> 
+				<p class="zhlh-wap-p1">800元</p>
+				<p class="zhlh-wap-p2 "></p>
+				<div class="zhlh-wap-p3 ">
+					厉害了，word用户<br />恭喜您获得<span class="level">一等奖</span>	  
+				</div> 
+				<p class="zhlh-wap-p4">一等奖</p>
+				 		
+			</div> 
+			<div class="extract">
+				<a href="/Zhactivity/Prize/myprize" class="wrap-share left">
+					<img src="__PUBLIC__/zhonghua/images/hongbao.png">
+				</a>
+				<a href="javascript:;" class="wrap-share left wap-share">
+					<img src="__PUBLIC__/zhonghua/images/share.png">
+				</a>
+			</div>
+		</div>	
+	<!-- 中奖结束	 --> 
+	 
+	<!-- 分享界面  -->
+	<div class="zhlh-share">
+		<img src="__PUBLIC__/zhonghua/images/guide.png" class="share1">
+		<img src="__PUBLIC__/zhonghua/images/zh.png" class="share2">
+		<img src="__PUBLIC__/zhonghua/images/zhwz.png" class="share3">
+	</div>
+	<!-- 分享界面 end  -->
+	
+	
+</div>
+
+<!-- 播放音乐 -->
+<audio id="audio" src="__PUBLIC__/zhonghua/images/musics.mp3" style="opacity:0" preload="auto" controls loop hidden="true"/> 
+<script>
+	//播放音乐
+	var myAuto = document.getElementById('audio');  
+    myAuto.play();
+		function clicksin(){
+			$("#clicks1").show()
+		}
+		function clicksout(){
+			$("#clicks1").hide()
+		}
+		function clickopenin(){
+			$("#clickopen").show()
+		}
+		function clickopenout(){
+			$("#clickopen").hide()
+		}
+		
+	function getprize(){
+		$.ajax({  
+         		type : "POST",  
+          		url : "{:U('/Zhactivity/Activity')}",  
+         		data : {},  
+          		async : true,  
+          		success : function(data){  
+            	if(data.status==200){
+						if(data.date.level==0){
+							$(".confirm").show();
+							}else{
+								$(".zhlh-wap-p1").html(data.date.prize_name);
+								$(".level").html(data.date.level);
+								$(".zhlh-wap-p4").html(data.date.level);
+								$(".zhongjiang").show();
+								}
+								clearInterval(Timerr,2);
+						}else{
+							if(data.status==400){
+								$(".use-up").show();
+								
+								}else{
+									alert(data.message);
+									}
+							 
+						}
+          }  
+     });
+		}
+	$(document).on('touchstart', '.dd', function(){
+		$(this).css("background-position","0 -100px");
+
+		setTimeout("clicksin()",0);
+		setTimeout("clickopenin()",300);
+		setTimeout("clicksout()",300);	
+		setTimeout("getprize()",1000);	
+		setTimeout("clickopenout()",1000);
+		//中奖弹框
+			/**/
+		
+	});
+		//分享
+		$('.wap-share').click(function (){
+			$('.zhlh-share').show();
+		})
+		$('.zhlh-share').click(function (){
+			$(this).hide();
+		})
+		
+		$('.wap-tc-s3').click(function (){ 
+			//$(".confirm").hide();
+			self.location.reload();  //刷新本页
+		})
+		
+		 
+			 
+		//次数用完弹框  
+		//if(num<1){
+		//	$('.use-up').show();
+		//}
+			
+		//没有中奖弹框
+		//if(){
+		//	$('.confirm').show();
+		//}
+			 			 
+</script>
+</body>
+<include file="Application/Zhactivity/View/Zhonghua/share.html" />
+</html>

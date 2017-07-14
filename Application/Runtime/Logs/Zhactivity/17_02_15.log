@@ -1,0 +1,11 @@
+[ 2017-02-15T15:11:43+08:00 ] 188.188.188.127 /Zhactivity/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001875s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011461s ]
+NOTIC: [8] Undefined index: wxinfo E:\PHP\WWW\yfq\Application\Zhactivity\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: sub E:\PHP\WWW\yfq\Application\Zhactivity\Controller\CommonController.class.php 第 20 行.
+NOTIC: [8] Undefined index: sub E:\PHP\WWW\yfq\Application\Zhactivity\Controller\CommonController.class.php 第 20 行.
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中华游戏</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+		<meta name="format-detection" content="telephone=NO">
+		<meta name="apple-touch-fullscreen" content="YES"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="HandheldFriendly" content="True">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/zhonghua/css/index.css"/>
+		<script src="__PUBLIC__/zhonghua/js/jquery.min.js"></script> 
+		<script>
+        (function(win,doc){
+            function change(){
+                doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            }
+            change();
+            win.addEventListener('resize',change,false);
+        })(window,document);
+    </script>
+	</head>
+	<body class="hj-mess">
+		<img src="__PUBLIC__/zhonghua/images/mess.png" class="mess-tit">
+		<div class="wrap-table">
+			 
+			<div class="wrap-title">
+			  <div class="title-left"><span>日期</span></div>
+			  <div class="title-right"><span>奖项</span></div>
+		    </div>
+			<div class="wrap-tab">
+           <volist name="my_prize" id="vo">
+            	<div class="wap-table">
+				  <div class="table-left">{$vo['add_time']|date="Y-m-d",###} </div>
+				  <div class="table-right">{$vo.prize_name}</div>
+				</div>
+            </volist>
+		
+			</div>
+			<a href="http://yfq.sjzdezhong.com/Zhactivity/Index?sub=1" class="return-index">返回首页</a>
+			<style>
+			.return-index{
+				display:block;
+				width:25%;
+				height:1rem;
+				line-height:1rem;
+				border-radius:5px;
+				background-color:#fff100;
+				text-align:center;
+				color:#fff;
+				margin:0 auto;
+				text-align: center;
+				text-decoration: none;
+				font-size:0.6rem;
+			}
+			</style>
+		</div>
+        <include file="Application/Zhactivity/View/Zhonghua/share.html" />
+	</body>
+</html>

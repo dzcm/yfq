@@ -1,0 +1,93 @@
+<include file="Application/Admin/View/Index/index.html" />
+<!--/sidebar-->
+
+<div
+	style="width: 50%; margin-left: 20%; height: 50px; margin-top: 20px">
+	<div class="report_list_1 report_meau"
+		style="font-size: 20px; width: 150px; float: left; text-align: center">
+		<a href="#" onclick="change(1)"> <i class="icon-font"></i> 今日报表
+		</a>
+	</div>
+	<div class="report_list_2 report_meau"
+		style="font-size: 20px; width: 150px; float: left; text-align: center; margin: 0 auto;">
+		<a href="#" onclick="change(2)"> <i class="icon-font"></i> 周报表
+		</a>
+	</div>
+
+	<div class="report_list_3 report_meau"
+		style="font-size: 20px; width: 150px; float: left; text-align: center">
+		<a href="#" onclick="change(3)"> <i class="icon-font"></i> 昨日报表
+		</a>
+	</div>
+	<div class="report_list_4 report_meau"
+		style="font-size: 20px; width: 200px; float: left; text-align: center">
+		<a href="#" onclick="change(4)"> <i class="icon-font"></i>
+			单日奖品周报表
+		</a>
+	</div>
+</div>
+<div class="main-wrap">
+	<div class="search-wrap">
+		<div class="search-content" style="margin-left: 80%; width: 10%">
+			<a href="/Admin/Prizereport/gameReport?type=1">详情导出</a>
+		</div>
+	</div>
+	<div class="result-wrap" id="prize_use"
+		style="width: 90%; height: 800px"></div>
+</div>
+<!--/main-->
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	var data ={$prize_use_info.val};
+	var data_max = {$prize_use_info.max_num}; //Y轴最大刻度
+	var line_title = {$prize_use_info.prize_name}; //曲线名称
+	var y_label = "个数"; //Y轴标题
+	var x_label = "日期"; //X轴标题
+	var x = {$prize_use_info.x_title}; //定义X轴刻度值
+	var title = "一周各进项领取情况"; //统计图标标题
+
+	
+	change(2);
+	function change(id){
+		$(".result-wrap").html("");
+		$(".search-wrap").css("display","none");
+		$('.report_meau').css("background-color","#fff");
+		$('.report_list_'+id).css("background-color","#ccc");
+		if(id==2){
+			j.jqplot.diagram.base("prize_use", data, line_title, title, x, x_label, y_label, data_max, 1);
+			}
+		if(id==1){
+			$(".search-wrap a").attr("href","/Admin/Prizereport/gameReport?type=1&type_id={$type_id}");
+				$(".search-wrap").css("display","block");
+				var today_date=[{$today_prize_info.number},{$today_prize_info.use_num}];
+			j.jqplot.diagram.base("prize_use", today_date, ['总投放','已领取'], "今日奖品统计表", {$today_prize_info.prize_name}, "奖品名称", y_label, {$today_prize_info.max_num}, 2);
+				
+			
+			}
+		if(id==3){
+			$(".search-wrap a").attr("href","/Admin/Prizereport/gameReport?type=2&type_id={$type_id}");
+				$(".search-wrap").css("display","block");
+				var yest_number={$yestday_prize_info.number};
+				
+				var yest_use_num={$yestday_prize_info.use_num};
+				
+				var yest_prize_name={$yestday_prize_info.prize_name};
+				
+				var yest_max_num={$yestday_prize_info.max_num};
+
+
+				var yestday_prize_info=[yest_number,yest_use_num];
+			j.jqplot.diagram.base("prize_use", yestday_prize_info, ['总投放','已领取'], "昨日奖品统计表", yest_prize_name, "奖品名称", y_label, yest_max_num, 2);
+				
+			
+			}
+		if(id==4){
+			j.jqplot.diagram.base("prize_use",[ {$prize_day_totle.val}],["奖品总数"], "单日奖品总数周报表", {$date_list}, "个数","日期",{$prize_day_totle.max}, 1);
+			}
+		}
+	
+	
+
+</script>

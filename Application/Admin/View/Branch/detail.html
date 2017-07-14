@@ -1,0 +1,67 @@
+<include file="Application/Admin/View/Index/header.html" />
+<body>
+	<div class="topbar-wrap white">
+		<div class="topbar-inner clearfix"></div>
+	</div>
+	<div class="container clearfix">
+
+		<!--/sidebar-->
+
+		<div class="result-content">
+			<form id="from" onsubmit="return add_user();">
+				<table class="insert-tab" width="100%">
+					<tbody>
+						<tr>
+							<th width="120"><i class="require-red">*</i>活动机构名称：</th>
+							<td><input class="common-text required" id="name"
+								name="name" size="10" value="{$info.name}" type="text"></td>
+						</tr>
+						<tr>
+							<th><i class="require-red"></i>投入金额：</th>
+							<td><input class="common-text required" id="last_money"
+								name="last_money" size="10" value="{$info.name}" type="text"></td>
+						</tr>
+						<tr>
+							<th><i class="require-red"></i>奖品类型：</th>
+							<td><select id="act_type" class="common-text required"
+								name="act_type">
+									<option value="1">已红包发放</option>
+									<option value="2">其他奖品</option>
+									</section>></td>
+						</tr>
+
+						<tr>
+							<th></th>
+							<td><input class="btn btn-primary btn6 mr10" value="添加"
+								type="submit"><i class="require-red" id="message"></i></td>
+						</tr>
+					</tbody>
+
+				</table>
+				</from>
+		</div>
+
+		<!--/main-->
+	</div>
+</body>
+</html>
+<script src="__PUBLIC__/js/com.js"></script>
+<script>
+	function add_user(id) {
+		var date = getFormJson('form');
+		
+		{
+			$.post("{:U('addBranch')}",date,function(data,datatype){
+				layer.msg(data.message);
+				if (data.status == 200) {
+					parent.location.reload();
+					return false;
+
+				}
+				;
+
+			}, "json");
+		}
+		return false;
+	}
+</script>

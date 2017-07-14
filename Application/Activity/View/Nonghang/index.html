@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+		<meta name="format-detection" content="telephone=NO">
+		<meta name="apple-touch-fullscreen" content="YES"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="HandheldFriendly" content="True">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/nonghang/css/index.css"/>
+        <script src="__PUBLIC__/js/jquery.js"></script>
+		<script src="__PUBLIC__/nonghang/js/jquery.min.js"></script>
+		<script>
+        (function(win,doc){
+            function change(){
+                doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            }
+            change();
+            win.addEventListener('resize',change,false);
+        })(window,document);
+    </script>
+	</head>
+	<body class="index">
+	   <!--福袋结果_start-->
+	   <div class="result-wrap" style="display:none" id="result">
+	   	    <div class="result-blank"></div>
+	   		<img src="__PUBLIC__/nonghang/images/lucky.png" class="lucky-img">
+	   		<div class="result-txt">0.5元</div>
+	   		<div class="sure-btn-wrap">
+	   			<a href="javascript:;" class="sure-btn" id="sure-btn">
+	   				<img src="__PUBLIC__/nonghang/images/sure.png">
+	   		    </a>
+	   			<a href="javascript:" class="share-btn" id="share">
+	   				<img src="__PUBLIC__/nonghang/images/share-btn.png">
+	   			</a>
+	   		</div>
+	   		<img src="__PUBLIC__/nonghang/images/tishi.png" class="tishi">
+	   </div>
+	   <!--福袋结果_end-->
+	   <!--二维码弹框_start-->
+	   <div class="result-wrap" style="display:none" id="ewm">
+	   		<img src="__PUBLIC__/nonghang/images/ewm-nh.jpg" style="width:50%;display:block;margin:6rem auto 0">
+	   </div>
+	   <!--二维码弹框_end-->
+	   <!--游戏说明_start-->
+	   <div class="result-wrap" style="display:none" id="explain">
+	   		<div class="sm-blank"></div>
+	   		<div class="sm-wrap" style="position:relative;">
+				<div id="obj-btn">×</div>
+	   			<img src="__PUBLIC__/nonghang/images/shuoming.png" class="shuoming">
+	   			<a href="javascript:;" class="gopay" id="gopay">
+	   				<img src="__PUBLIC__/nonghang/images/quzhifu.png">
+	   			</a>
+	   		</div>
+	   </div>
+	   <!--游戏说明_end-->
+	   <div class="result-wrap" id="load">
+			<div><img src="__PUBLIC__/nonghang/images/loading.gif"><br /><br />页面加载中...</div>
+	   		 
+	   </div>
+	   
+	   
+	   <!--福袋结果抢完-->
+	   <div class="result-wrap-grab" style="display:none" id="grab1">
+	   		<div class="sm-blank"></div>
+	   		<div class="sm-wrap-grab" style="position:relative;" id="grab">
+				 
+	   			<img src="__PUBLIC__/nonghang/images/fzl.png" class="feizou">
+	   			<div class="sure-btn-wrap">
+					<a href="javascript:;" class="sure-btn" id="sure-btn1">
+						<img src="__PUBLIC__/nonghang/images/sure.png">
+					</a>
+					<a href="javascript:" class="share-btn" id="share1">
+						<img src="__PUBLIC__/nonghang/images/share-btn.png">
+					</a>
+				</div>
+	   		</div>
+	   </div>
+	   <!--福袋结果抢完-->
+	   
+	   
+	   
+	   
+	   
+	   
+	   <style>
+		#obj-btn{position:absolute;right:2%; top:-0.2rem;font-size:1.6rem; color:#000; opacity:0.4;}
+		#load{display:none; text-align:center;}
+		#load div{margin-top:50%; color:yellow; font-size:0.9rem;}
+		#load div img{width:10%;}
+		.opac{height:1.2rem;line-height: 1.2rem;width:100%; color: #fff;font-size: 0.6rem;
+		margin:0 auto;position:absolute;bottom:0;left:0 right:0; text-align: center; opacity:0.6;background: rgba(0,0,0,0.4);
+	}
+	   </style>
+	   <!--分享_start-->
+	   <div class="result-wrap" style="display:none" id="shares">
+	   		<img src="__PUBLIC__/nonghang/images/shares.png" class="share-img">
+	   </div>
+	   <!--分享_end-->
+	   <script>
+	   // $("#result").css("display","block");
+	    String.prototype.trim = function(){
+  rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g ;
+  return this == ""||this== null?"" :( this + "" ).replace( rtrim, "" );   
+ }
+	   $(function(){
+			$(".gopay").click(function(){
+				$.post("{:U('/Activity/Pay')}",{},function(data,datatype){
+					data=data.trim();
+					var info=JSON.parse(data);
+					if(info.status==200){
+						window.location.href=info.date.url;
+						}else{
+							alert(info.message);
+							}﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿
+			}, "text");﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿
+				
+				});
+		   $(".fd-list a").click(function(){
+			   $.post("{:U('/Activity/Activity')}",{},function(data,datatype){
+					if(data.status==200){
+						$('.result-txt').html(data.date.money/100+"元");
+						$("#result").css("display","block");
+						}
+					if(data.status==300){
+							alert(data.message);
+							}
+					if(data.status==400){
+						if(data.date.code==1){
+							$("#explain").css("display","block");
+							}
+						if(data.date.code==2){
+							alert("您可通过分享获取游戏机会");
+							$("#shares").css("display","block");
+							}
+							}
+					if(data.status==500){
+						$("#grab1").css("display","block");
+					}
+			}, "json");
+			   
+			   });
+			  $("#share").click(function(){
+	   		$("#shares").css("display","block");
+	        })
+			
+			$("#obj-btn").click(function(){
+				$("#explain").css("display","none");
+	        })
+			
+			
+			$("#share1").click(function(){
+				$("#shares").css("display","block");
+	        })
+			
+			$("#shares").click(function(){
+				$(this).css("display","none");
+	        })
+			$("#sure-btn").click(function(){
+				$("#result").css("display","none"); 
+	        })
+			
+			$("#sure-btn1").click(function(){ 
+				$("#grab1").css("display","none");
+	        })
+			
+			
+			$("#gopay").click(function(){
+				$("#explain").css("display","none");
+				$("#load").css("display","block");
+	        })  
+			$(".opac").fadeOut(5000); 
+			//判断是否出现二维码 
+			if({$sub}!=1){
+				//$("#ewm").css("display","block");
+			}
+		   //
+	   /*	//$("#text").click(function(){
+	   		//$("#result").css("display","block");
+	        //})
+	   	//填写相应的条件,出现“福袋结果”弹框,点击分享按钮，可弹出分享弹框
+	   	if(1==1){
+	   	  $("#result").css("display","block");
+	        }
+	   	
+
+
+	    //填写条件,出现“游戏说明”弹框
+	   	if(){
+	   	  $("#explain").css("display","block");
+	        }*/
+	   })
+	   </script>
+	   <div class="blank"></div>
+	   <ul class="fd-list">
+	   	   <li id="text">
+	   	   		<a href="javascript:"><img src="__PUBLIC__/nonghang/images/fu.png">fff</a>
+	   	   </li>
+	   	   <li id="te">
+	   	   		<a href="javascript:"><img src="__PUBLIC__/nonghang/images/lu.png"></a>
+	   	   </li>
+	   	   <li>
+	   	   		<a href="javascript:"><img src="__PUBLIC__/nonghang/images/shou.png"></a>
+	   	   </li>
+	   	   <li>
+	   	   		<a href="javascript:"><img src="__PUBLIC__/nonghang/images/xi.png"></a>
+	   	   </li>
+	   	   <li>
+	   	   		<a href="javascript:"><img src="__PUBLIC__/nonghang/images/cai.png"></a>
+	   	   </li>
+	   	   <li>
+	   	   		<a href="javascript:"><img src="__PUBLIC__/nonghang/images/ji.png"></a>
+	   	   </li>
+	   	   <li>
+	   	   		<a href="javascript:"><img src="__PUBLIC__/nonghang/images/xiang.png"></a>
+	   	   </li>
+	   	   <li>
+	   	   		<a href="javascript:"><img src="__PUBLIC__/nonghang/images/ru.png"></a>
+	   	   </li>
+	   	   <li>
+	   	   		<a href="javascript:"><img src="__PUBLIC__/nonghang/images/yi.png"></a>
+	   	   </li>
+	   </ul>
+	   <div class="btn-wrap">
+	   		<a href="/Activity/Directions" class="mj-btn">
+	   			<img src="__PUBLIC__/nonghang/images/zjmjbtn.png">
+	   		</a>
+	   		<a href="/Activity/Prize/myprize" class="grzx-btn">
+	   			<img src="__PUBLIC__/nonghang/images/grzxbtn.png">
+	   		</a>
+	   </div>
+	   
+	   <div class="opac">
+				游戏技术由 哆吧科技 提供
+	   </div>
+	</body>
+    <include file="Application/Activity/View/Nonghang/share.html" />
+</html>

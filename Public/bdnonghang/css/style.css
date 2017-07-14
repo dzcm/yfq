@@ -1,0 +1,316 @@
+body,html{width:100%; height:100%; margin:0; padding:0;font-family:"微软雅黑"; }
+ul{padding:0; margin:0; list-style: none;}
+li{padding:0; list-style: none;}
+*{
+  padding: 0;
+  margin: 0;
+} 
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+ 
+ 
+ 
+
+.bd-yfq{
+	 background:url(../images/bg_bj.jpg) no-repeat #FBFA97; 
+  background-size:contain;  
+  box-sizing: border-box;
+}  
+.warp-personal{
+	width:100%;   
+	text-align:center;
+	margin:0 auto;
+    padding-top: 4rem;
+}
+ 
+.warp-personal img{
+	width:15%; 
+	height:30%; 
+	overflow:hidden; 
+    border-radius:50%;  
+}
+.warp-personal span{
+	font-size: 1rem;
+    line-height: 2.2rem;
+    color: #3c3c3c;
+    display: inline-block; 
+    overflow: hidden;
+    max-width: 40%;
+	font-weight:bold;
+    height: 2.2rem;  
+} 
+
+.wap-balance{
+	clear: both;
+}
+.wap-balance-left{
+	width:51%; 
+	font-size:1.5rem;
+	text-align:right;
+	color:#fbf28d;
+	margin-top: 0.2rem;
+}
+.wap-balance .wap-tit {
+    display: block;
+    margin: 0.2rem auto 0.6rem !important;; 
+	padding-left: 1.3rem;
+    width: 55%;  
+}
+ 
+.wap-balance-right{
+	/* width:49%; */
+	float:left;
+	font-size:1.4rem;
+	text-align:left;
+	color:#333;
+	line-height: 1.8rem;
+	font-family: "微软雅黑";  
+	/* background:url(../images/yu-e-bg.png) top center no-repeat; */
+	/* background-size:contain; */
+	background-color: #FEAC01;
+    padding: 0 3%;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.wap-record{
+	clear: both;
+	font-size:1rem;
+	width: 77%;
+    margin: 2.5rem auto 0.5rem !important;
+	color:#fbf28d;
+}
+
+.wap-record .wap-tit {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+} 
+ 
+.table-personal { 
+	padding-top:0.5rem;
+	width:85%;
+	display:block;
+	margin:0 auto;
+	height:11.5rem;
+	background:#f3f28e;
+	background-size:contain; 
+	line-height:1.2rem;
+	color:#d9671b;
+	font-weight:both; 
+}
+
+.table-tab{
+	overflow-y:auto;
+	height:11.1rem;
+	width: 100%;  
+	margin:0 auto;  
+ } 
+.table-top{
+	width: 90%;  
+	margin:0 auto; 
+	border-bottom:1px dashed #f29b76; 
+  }
+.table-wrap {
+  clear:both;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.gz-btn {
+  width:40%;
+  overflow:hidden;
+  display:block;
+  margin:0.8rem auto 0;
+  margin-right:10%;
+}
+.gz-btn img {
+  width:100%;  
+} 
+ 
+.wap-tit {
+  display:block;
+  margin:0 auto 0.2rem;
+  width:100%;
+}
+
+.table-left,.table-right{
+  width:50%;
+  text-align:center;
+  font-size:0.7rem; 
+}
+.table-left{
+	float:left; 
+	border-bottom:1px dashed #f29b76;
+	border-right:1px dashed #f29b76;
+	box-sizing:border-box;
+	width:65%;
+	font-size:0.7rem;
+	background: url(../images/wenhao.png) left 10px no-repeat;
+    background-size: 8%;
+}
+.table-right{
+  float:right;
+  text-align:center;
+  border-bottom:1px dashed #f29b76;
+  width:35%;
+	font-size:0.7rem;
+}
+  
+.extract{
+	width:85%; 
+	margin:0 auto;
+}
+.extract .gz-btn{
+	width:40%; 
+	margin-right:10%;
+}
+
+
+
+
+.share, .buzu,.confirm{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.7);
+	display: none;
+}
+.buzu-tc{
+	width:77%;  
+	background:url(../images/buzu01.png) top center no-repeat;
+	background-size:contain;
+	height:12rem; 
+	margin:0 auto;
+	margin-top:7rem;  
+}
+.buzu-tc3{
+	display: block;
+	width: 45%;
+	height: auto;
+	margin: 0 auto;
+	padding-top:9rem;
+}
+.buzu-tc3 img{ 
+	width: 100%; 
+}
+
+.wap-txcg{
+	width:77%;  
+	background:url(../images/tixianchenggong.png) top center no-repeat;
+	background-size:contain;
+	height:12rem; 
+	margin:0 auto;
+	margin-top:7rem;  
+}
+
+.wap-tc-pic{
+	width: 80%;
+    margin: 24% 10% 0;
+}
+
+.wap-tc-title{
+	width: 80%; 
+    margin: 0 auto;    
+}
+ 
+.wap-tc-title img{
+	width: 100%;    
+}
+
+.wap-cg{
+	display: block;
+	width: 45%;
+	height: auto;
+	margin: 0 auto;
+}
+.wap-cg img{ 
+	width: 100%; 
+}
+
+.wap-tc{
+	width:77%; 
+	background:#fff799;
+	border:2px solid #ec6941;
+	height:12rem; 
+	margin:0 auto;
+	margin-top:7rem; 
+	-moz-border-radius: 25px; /* Firefox */
+	-webkit-border-radius: 25px; /* Safari 和 Chrome */
+	border-radius: 25px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+	-moz-box-shadow: 0 0 15px #000; /* Firefox */
+	-webkit-box-shadow: 0 0 15px #000; /* Safari 和 Chrome */
+	box-shadow: 0 0 15px #000; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+	behavior: url(ie-css3.htc); /* 通知IE浏览器调用脚本作用于'box'类 */
+}
+
+.wap-tc-jg{
+	color: #e83a05;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.wap-tc-s3{
+	display: block;
+	width: 45%;
+	height: auto;
+	margin: 0 auto;
+}
+.table-zj{ 
+  height:17rem;
+  background:url(../images/table-bgzj.png) top center no-repeat;
+  background-size:contain; 
+}
+
+
+ 
+.confirm .wap-tc{
+	margin-top: 9rem;
+	height: 11rem;
+	text-align: center; 
+} 
+ 
+.wap-wenxin{
+	width:77%;  
+	background:url(../images/wenxin.png) top center no-repeat;
+	background-size:contain;
+	height:12rem; 
+	margin:0 auto;
+	margin-top:7rem; 
+}
+.wap-wenxin p{    
+	font-size: 0.7rem; 
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    color: #e83a05; 
+    text-align: center;
+	padding-top:3rem;
+	}
+	.wenxinbtn{
+		width: 80%;
+    height: auto;
+    margin: 0 auto;
+	}
+.wenxinbtn .queren,.wenxinbtn .quxiao{ 
+    width: 35%;
+    height: auto;
+    font-size: 0.8rem; 
+    color: #ffffff;
+    text-align: center; 
+    -webkit-border-radius: 10px;
+    display: inline-block;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 6% auto 6% auto; 
+	padding-left: 6%;
+	}
+

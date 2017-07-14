@@ -1,0 +1,1642 @@
+[ 2017-02-08T09:25:35+08:00 ] 188.188.188.153 /Admin/Login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2017-02-08T09:25:36+08:00 ] 188.188.188.153 /Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `yfq_admin` [ RunTime:0.0693s ]
+SQL: SELECT * FROM `yfq_admin` WHERE `user_name` = 'admin' AND `user_password` = '2d0b77593e1929168685f86b65931277' LIMIT 1   [ RunTime:0.0092s ]
+SQL: UPDATE `yfq_admin` SET `last_login_time`='1486517136' WHERE `uid` = 2 [ RunTime:0.0354s ]
+
+[ 2017-02-08T09:25:36+08:00 ] 188.188.188.153 /Admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined variable: branch_info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2017-02-08T09:25:38+08:00 ] 188.188.188.153 /Admin/Prizereport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8] Undefined index: type_id E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0404s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0346s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 104 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 106 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 108 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 126 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 126 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 127 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 135 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-02-08T09:25:39+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=4 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 14 E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 126 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 126 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 127 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004485s ]
+
+[ 2017-02-08T09:25:43+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 104 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 106 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 108 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 126 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 126 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 127 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 135 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 137 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2017-02-08T09:33:03+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=4 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 14 E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 130 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 130 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 131 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2017-02-08T09:35:01+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=4 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 14 E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-02-08T09:35:07+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000532s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 107 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 109 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 111 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 139 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 141 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2017-02-08T09:35:10+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 107 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 109 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 111 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 139 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 141 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002127s ]
+
+[ 2017-02-08T09:35:12+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 107 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 109 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 111 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 139 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 141 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000548s ]
+
+[ 2017-02-08T09:35:43+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 107 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 109 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 111 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 139 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 141 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-02-08T09:35:45+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 107 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 109 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 111 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 139 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 141 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000508s ]
+
+[ 2017-02-08T09:35:46+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 107 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 109 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 111 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 139 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 141 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2017-02-08T09:35:47+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 107 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 109 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 111 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 139 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 141 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2017-02-08T09:35:49+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 107 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 109 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 111 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 139 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 141 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2017-02-08T09:35:50+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=3 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 107 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 109 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 111 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 139 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 141 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2017-02-08T09:35:51+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 107 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 109 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 111 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 132 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 133 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 139 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 141 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2017-02-08T09:36:53+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 105 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 107 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 109 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 127 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 127 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 128 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 134 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 136 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2017-02-08T09:36:55+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 105 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 107 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 109 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 127 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 127 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 128 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 134 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 136 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2017-02-08T09:37:34+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 113 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 119 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 121 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2017-02-08T09:37:35+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 113 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 119 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 121 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001432s ]
+
+[ 2017-02-08T09:37:38+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 113 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 119 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 121 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000618s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2017-02-08T09:37:39+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=3 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 113 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 119 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 121 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2017-02-08T09:37:40+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 113 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 119 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 121 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2017-02-08T09:38:14+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 113 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 119 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 120 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 121 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-02-08T09:47:25+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 113 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 121 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 124 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2017-02-08T09:47:27+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 113 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 121 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 124 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000619s ]
+
+[ 2017-02-08T09:47:28+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 113 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 121 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 124 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-02-08T09:49:08+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 113 行.
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 121 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 124 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2017-02-08T09:51:34+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 78 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined index: number E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: use_num E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 112 行.
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\e39816b88db4a5a929863ddb8a6e1f30.php 第 113 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2017-02-08T09:57:41+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 82 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000248s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2017-02-08T10:02:07+08:00 ] 188.188.188.153 /Admin/Prize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( status=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `yfq_activity`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_prize` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_prize` WHERE ( if_del=1 ) LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yfq_prize` WHERE ( if_del=1 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: branch_info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 61 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2017-02-08T10:02:10+08:00 ] 188.188.188.153 /Admin/Activity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( status=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `yfq_activity` WHERE ( status!=3 ) LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yfq_activity` WHERE ( status!=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: branch_info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2017-02-08T10:02:13+08:00 ] 188.188.188.153 /Admin/Prize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( status=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `yfq_activity`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_prize` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `yfq_prize` WHERE ( if_del=1 ) LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yfq_prize` WHERE ( if_del=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined variable: branch_info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 61 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2017-02-08T10:02:17+08:00 ] 188.188.188.153 /Admin/Prize/addPrize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( status=1 )  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `yfq_activity` WHERE ( status!=3 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: id E:\PHP\WWW\yfq\Application\Admin\Controller\PrizeController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\5574274eb6d22b93db5a78773e3058db.php 第 51 行.
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\5574274eb6d22b93db5a78773e3058db.php 第 57 行.
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\5574274eb6d22b93db5a78773e3058db.php 第 62 行.
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\5574274eb6d22b93db5a78773e3058db.php 第 67 行.
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\5574274eb6d22b93db5a78773e3058db.php 第 72 行.
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\5574274eb6d22b93db5a78773e3058db.php 第 106 行.
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\5574274eb6d22b93db5a78773e3058db.php 第 108 行.
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\5574274eb6d22b93db5a78773e3058db.php 第 109 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2017-02-08T10:02:32+08:00 ] 188.188.188.153 /Admin/Prize/addPrize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `yfq_prize` [ RunTime:0.0044s ]
+SQL: INSERT INTO `yfq_prize` (`prize_name`,`level`,`update_time`,`type_id`,`act_id`) VALUES ('无中奖','0','1486519352','4','6') [ RunTime:0.0463s ]
+
+[ 2017-02-08T10:02:32+08:00 ] 188.188.188.153 /Admin/Prize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( status=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `yfq_activity`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yfq_prize` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `yfq_prize` WHERE ( if_del=1 ) LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yfq_prize` WHERE ( if_del=1 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+NOTIC: [8] Undefined variable: branch_info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 61 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 106 行.
+NOTIC: [8] Undefined offset: 0 E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\54672e846cfd9d8e359e8d1a5ea09817.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2017-02-08T10:02:35+08:00 ] 188.188.188.153 /Admin/Activity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( status=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `yfq_activity` WHERE ( status!=3 ) LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yfq_activity` WHERE ( status!=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: branch_info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000589s ]
+
+[ 2017-02-08T10:02:38+08:00 ] 188.188.188.153 /Admin/Activity/addAct.html?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( status=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `yfq_activity` WHERE ( act_id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015955s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2017-02-08T10:02:38+08:00 ] 188.188.188.153 /Admin/Prize/getPrize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `yfq_activity` WHERE ( act_id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=4 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yfq_prize` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yfq_prize` WHERE ( if_del=1 and act_id=6 )  [ RunTime:0.0002s ]
+
+[ 2017-02-08T10:02:41+08:00 ] 188.188.188.153 /Admin/Activity/addActUp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0103s ]
+SQL: UPDATE `yfq_activity` SET `type_id`='4',`act_name`='市人保情人节',`free_times`='1',`pay_money`='0',`pay_times`='0',`valid_pay_num`='0',`share_times`='0',`valid_share_num`='0',`start_time`='1486224000',`end_time`='1488297599',`prize_ratio`='{\"14\":\"2\",\"15\":\"0\"}' WHERE ( act_id=6 ) [ RunTime:0.0325s ]
+
+[ 2017-02-08T10:02:41+08:00 ] 188.188.188.153 /Admin/Activity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( status=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `yfq_activity` WHERE ( status!=3 ) LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yfq_activity` WHERE ( status!=3 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: branch_info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\c8d84a2d51a6dbf36e8ef99e6375e8a9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2017-02-08T10:02:42+08:00 ] 188.188.188.153 /Admin/Activity/addActUp.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0113s ]
+SQL: UPDATE `yfq_activity` SET `type_id`='4',`act_name`='市人保情人节',`free_times`='1',`pay_money`='0',`pay_times`='0',`valid_pay_num`='0',`share_times`='0',`valid_share_num`='0',`start_time`='1486224000',`end_time`='1488297599',`prize_ratio`='{\"14\":\"2\",\"15\":\"0\"}' WHERE ( act_id=6 ) [ RunTime:0.0299s ]
+
+[ 2017-02-08T10:02:53+08:00 ] 188.188.188.153 /Admin/Prize/todayPrize?act_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001644s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `yfq_activity` WHERE ( status=2 and act_id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_prize` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yfq_prize` WHERE ( if_del=1 and act_id=6 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( prize_id=14 and add_date="2017-02-08" and act_id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `yfq_prize_day_log` (`prize_id`,`prize_name`,`number`,`type_id`,`update_time`,`act_id`,`use_num`,`add_date`) VALUES ('14','安全锤','-1','4','1486519372','6','10','2017-02-08') [ RunTime:0.0256s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( prize_id=15 and add_date="2017-02-08" and act_id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `yfq_prize_day_log` (`prize_id`,`prize_name`,`number`,`type_id`,`update_time`,`act_id`,`use_num`,`add_date`) VALUES ('15','无中奖','-1','4','1486519373','6','0','2017-02-08') [ RunTime:0.0287s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\9e200c37c1dcca6efb5cd92513caa328.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-02-08T10:03:07+08:00 ] 188.188.188.153 /Admin/Prize/todayPrize?act_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `yfq_activity` WHERE ( status=2 and act_id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_prize` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `yfq_prize` WHERE ( if_del=1 and act_id=6 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( prize_id=14 and add_date="2017-02-08" and act_id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( prize_id=15 and add_date="2017-02-08" and act_id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\9e200c37c1dcca6efb5cd92513caa328.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-02-08T10:04:10+08:00 ] 188.188.188.153 /Admin/Prize/todayPrize?act_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `yfq_activity` WHERE ( status=2 and act_id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_prize` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `yfq_prize` WHERE ( if_del=1 and act_id=6 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( prize_id=14 and add_date="2017-02-08" and act_id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( prize_id=15 and add_date="2017-02-08" and act_id=6 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\9e200c37c1dcca6efb5cd92513caa328.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2017-02-08T10:04:20+08:00 ] 188.188.188.153 /Admin/Prize/todayPrize?act_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `yfq_activity` WHERE ( status=2 and act_id=6 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yfq_prize` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `yfq_prize` WHERE ( if_del=1 and act_id=6 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( prize_id=14 and add_date="2017-02-08" and act_id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( prize_id=15 and add_date="2017-02-08" and act_id=6 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\9e200c37c1dcca6efb5cd92513caa328.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2017-02-08T10:07:46+08:00 ] 188.188.188.153 /Admin/Prize/todayPrize?act_id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `yfq_activity` WHERE ( status=2 and act_id=6 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yfq_prize` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `yfq_prize` WHERE ( if_del=1 and act_id=6 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( prize_id=14 and add_date="2017-02-08" and act_id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `yfq_prize_day_log` (`prize_id`,`prize_name`,`number`,`type_id`,`update_time`,`act_id`,`use_num`,`add_date`) VALUES ('14','安全锤','-1','4','1486519666','6','0','2017-02-08') [ RunTime:0.0296s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( prize_id=15 and add_date="2017-02-08" and act_id=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `yfq_prize_day_log` (`prize_id`,`prize_name`,`number`,`type_id`,`update_time`,`act_id`,`use_num`,`add_date`) VALUES ('15','无中奖','-1','4','1486519666','6','0','2017-02-08') [ RunTime:0.0282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\9e200c37c1dcca6efb5cd92513caa328.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2017-02-08T10:08:39+08:00 ] 188.188.188.153 /Admin/Prize/todayPrize?act_id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `yfq_activity` WHERE ( status=2 and act_id=4 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `yfq_prize` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yfq_prize` WHERE ( if_del=1 and act_id=4 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( prize_id=11 and add_date="2017-02-08" and act_id=4 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: INSERT INTO `yfq_prize_day_log` (`prize_id`,`prize_name`,`number`,`type_id`,`update_time`,`act_id`,`use_num`,`add_date`) VALUES ('11','无中奖','-1','0','1486519719','4','0','2017-02-08') [ RunTime:0.0283s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined variable: info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\9e200c37c1dcca6efb5cd92513caa328.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000376s ]
+
+[ 2017-02-08T14:25:18+08:00 ] 188.188.188.153 /Admin/Prizereport
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8] Undefined index: type_id E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 82 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2017-02-08T14:25:20+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 82 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2017-02-08T14:25:28+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 82 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000542s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2017-02-08T14:25:32+08:00 ] 188.188.188.153 /Admin/Prizereport?type_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( type_id=2 and add_date>'2017-01-31' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: prize_name E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 82 行.
+NOTIC: [2] array_values() expects parameter 1 to be array, null given E:\PHP\WWW\yfq\Application\Admin\Controller\PrizereportController.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yfq_branch_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( type_id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2017-02-08T14:25:33+08:00 ] 188.188.188.153 /Admin/Branch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE ( status=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: branch_info E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\d54734d015d6e17d503cce5c1cae7d65.php 第 61 行.
+NOTIC: [8] Undefined variable: page E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\d54734d015d6e17d503cce5c1cae7d65.php 第 111 行.
+NOTIC: [8] Undefined variable: page E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\d54734d015d6e17d503cce5c1cae7d65.php 第 111 行.
+NOTIC: [8] Undefined variable: pages E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\d54734d015d6e17d503cce5c1cae7d65.php 第 111 行.
+NOTIC: [8] Undefined variable: pages E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\d54734d015d6e17d503cce5c1cae7d65.php 第 111 行.
+NOTIC: [8] Undefined variable: pages E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\d54734d015d6e17d503cce5c1cae7d65.php 第 111 行.
+NOTIC: [8] Undefined variable: pages E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\d54734d015d6e17d503cce5c1cae7d65.php 第 111 行.
+NOTIC: [8] Undefined variable: pages E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\d54734d015d6e17d503cce5c1cae7d65.php 第 114 行.
+NOTIC: [8] Undefined variable: page E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\d54734d015d6e17d503cce5c1cae7d65.php 第 115 行.
+NOTIC: [8] Undefined variable: count E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\d54734d015d6e17d503cce5c1cae7d65.php 第 115 行.
+NOTIC: [8] Undefined variable: pages E:\PHP\WWW\yfq\Application\Runtime\Cache\Admin\d54734d015d6e17d503cce5c1cae7d65.php 第 115 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+

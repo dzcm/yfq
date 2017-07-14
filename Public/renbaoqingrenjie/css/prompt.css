@@ -1,0 +1,101 @@
+.prompt {
+    max-width: 180px;
+    padding: 7px 7px;
+    position: fixed;
+    background-color: #4b4b4b;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    display: -webkit-box;
+    z-index: 11999;
+}
+
+    .prompt .i {
+        width: 30px;
+        display: -webkit-box;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+		background:url(../images/tan.png) no-repeat;
+    }
+
+    .prompt .info {
+        -webkit-box-flex: 1;
+        font-style: normal;
+        font-size: 13px;
+        font-family: "Helvetica Neue",\5FAE\8F6F\96C5\9ED1,Tohoma;
+        padding-left: 5px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        display: -webkit-box;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        color: #fff!important;
+    }
+
+    .prompt .success, .prompt .error, .prompt .information, .prompt .warning {
+        width: 30px;
+        height: 30px;
+        background: url(icenter.png);
+        background-repeat: no-repeat;
+    }
+
+    .prompt .success {
+        background-position: -3px -63px;
+    }
+
+    .prompt .error {
+        background-position: -32px -1px;
+    }
+
+    .prompt .information {
+        background-position: -33px -63px;
+    }
+
+    .prompt .warning {
+        background-position: -32px -32px;
+    }
+
+.confirm_Panel {
+    max-width: 180px;
+    padding: 7px 7px;
+    position: fixed;
+    background-color: #4b4b4b;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+}
+
+.confirm_text {
+    margin: 0px 3px;
+    line-height: 22px;
+    text-align: left;
+    font-style: normal;
+    font-size: 13px;
+    font-family: "Helvetica Neue",\5FAE\8F6F\96C5\9ED1,Tohoma;
+}
+.confirm_btn_Panel {
+    width:100%;
+    height:35px;
+    margin-top:5px;
+    display:-webkit-box;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+}
+
+.confirm_btn {
+    width: 60px;
+    margin: 0px 3px;
+    height: 25px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px #000;
+    box-sizing: border-box;
+    background-color: #2b9eb6;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    color: #fff;
+}

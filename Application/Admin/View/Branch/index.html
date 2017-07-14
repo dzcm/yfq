@@ -1,0 +1,105 @@
+<include file="Application/Admin/View/Index/index.html" />
+<!--/sidebar-->
+
+<div class="main-wrap">
+ <!-- <div class="search-wrap">
+    <div class="search-content">
+
+    </div>
+  </div>-->
+  <div>
+<ul class="sub-menu">
+<li>
+<a onclick="add()">
+<i class="icon-font"></i>
+添加机构
+</a>
+</li>
+</ul>
+</div>
+  <div class="result-wrap">
+    <form name="myform" id="myform" method="post">
+      <div class="result-title"> </div>
+      <div class="result-content">
+        <table class="result-tab" width="100%">
+          <tr>
+            <th>机构名称</th>
+            <th>剩余金额</th>
+            <th>已使用金额</th>
+            <th>活动类型</th>
+          </tr>
+          <volist name="info" id="i">
+            <tr>
+              <td>{$i.name}</td>
+ 				<td><span class="last_money_{$i.type_id}">{$i['last_money']/100}</span>&nbsp;&nbsp;&nbsp;<a href="#" onclick="update_branch({$i.type_id})">修改</a></td>
+                <td>{$i['use_money']}</td>
+                 <td><if condition="$i.act_type eq 1"> 以红包发放<else/>其他奖品</if></td>
+            </tr>
+          </volist>
+        </table>
+        <div class="list-page">
+          <ul class="pagination" >
+            <li style=" float:left"> <a href="{:U('index')}?page=1">首页</a> </li>
+            <for start="$page" end="$page+4">
+              <php> if($i <= $pages)
+                { </php>
+              <li style=" float:left"> <a href="{:U('index')}?page={$i}">{$i}</a> </li>
+              <php>}</php>
+            </for>
+            <li style=" float:left"> <a href="{:U('index')}?page={$pages}">尾页</a> </li>
+            <li style=" float:left"><a href="javascript:void(0)">当前第{$page}页,共{$count}条数据,{$pages}页</a></li>
+          </ul>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!--/main-->
+</div>
+</body></html>
+<script>
+function update_branch(type_id){
+	  layer.config({
+                extend: 'extend/layer.ext.js'
+            });
+
+                layer.prompt({
+                    title: '剩余金额',
+                    formType: 3
+                }, function (str) {
+                    if (str) {
+                        $.post("{:U('updateBranch')}",{last_money:str,type_id:type_id},function(data,datatype){
+				  		layer.alert(data.message);
+                     	if(data.status == 200) {
+				 			$(".last_money_"+type_id).html(str);
+			
+						};
+                               
+                		},"json");
+                    };
+                });
+	}
+function add(){
+
+layer.open({
+  type: 2,
+  title: '添加机构',
+  shadeClose: true,
+  shade: 0.8,
+  area: ['400px', '400px'],
+  content: "{:U('addBranch')}" //iframe的url
+}); 
+
+	}
+	function update(id){
+
+		layer.open({
+ 			 type: 2,
+  			title: '添加',
+  			shadeClose: true,
+  			shade: 0.8,
+  			area: ['580px', '580px'],
+  			content: "{:U('adddetail')}?id="+id //iframe的url
+});	
+		}
+</script>

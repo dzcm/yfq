@@ -1,0 +1,172 @@
+body,html{width:100%; height:100%; margin:0; padding:0; }
+ul{padding:0; margin:0; list-style: none;}
+li{padding:0; list-style: none;}
+*{
+  padding: 0;
+  margin: 0;
+}
+a{ -webkit-tap-highlight-color:rgba(255,0,0,0);}
+a:focus{
+  outline: none;
+}
+.index {
+  background:url(../images/index-bg.jpg) #da2625 top center no-repeat;
+  background-size:100%; 
+  font-family: "微软雅黑";
+  overflow:hidden;
+  background-color:#da2625;
+  box-sizing:border-box;
+  position:relative;
+}
+.fd-list {
+	width:74%;
+	display:block;
+	margin-left:18%;
+	overflow:hidden;
+	text-align:center;
+}
+.fd-list li {
+	float:left;
+	width:29%;
+	height:3.3rem;
+}
+.fd-list li a {
+	display:inline-block;
+	width:100%;
+}
+.fd-list li img {
+	width:100%;
+}
+.btn-wrap {
+	overflow: hidden;
+}
+.mj-btn,.grzx-btn {
+	display:inline-block;
+	width:35%;
+	overflow: hidden;
+	margin-left:10%;
+}
+.mj-btn img,.grzx-btn img{
+	width:100%;
+}
+.blank {
+	width:100%;
+	height:10.5rem;
+}
+.result-wrap {
+	position: absolute;
+	z-index:88;
+	height:100%;
+	width:100%;
+	background: rgba(0,0,0,0.8);
+}
+.lucky-img {
+	width:48%;
+	margin:0 auto;
+	display:block;
+}
+.result-blank {
+	height:3.5rem;
+	width:100%;
+}
+.result-txt {
+	width:51%;
+	height:10rem;
+	text-align:center;
+	font-family: "微软雅黑";
+	margin:0 auto;
+	color:#fff;
+	background:url(../images/fudai.png) bottom center no-repeat;
+	background-size:contain;
+	font-size:2rem;
+	font-weight:bold;
+	box-sizing:border-box;
+	padding-top:1rem;
+}
+.sure-btn-wrap {
+	overflow:hidden;
+	margin-top:0.2rem	
+}
+.sure-btn,.share-btn{
+	display:inline-block;
+	width:29%;
+	margin-left:10%;
+}
+.sure-btn img,.share-btn img {
+	width:100%;
+}
+.sure-btn{
+	margin-left:14%;
+}
+.tishi {
+	width:62%;
+	display:block;
+	margin:0.6rem auto 0;
+}
+.sm-blank {
+	width:100%;
+	height:8rem;
+}
+.sm-wrap {
+	height:9.7rem;
+	width:62%;
+	background:url(../images/yjbg.png) top center no-repeat;
+	background-size:contain;
+	margin:0 auto;
+	overflow:hidden;
+}
+.shuoming {
+	width:85%;
+	display:block;
+	margin:0.6rem auto 0;
+}
+.gopay {
+	display:block;
+	width:54%;
+	margin:0.3rem auto 0;
+}
+.gopay img {
+	width:100%;
+}
+.share-img {
+	width:100%;
+	position: absolute;
+	bottom:0;
+}
+ 
+ 
+
+ 
+
+.result-wrap-grab {
+	position: absolute;
+	z-index:88;
+	height:100%;
+	width:100%;
+	background: rgba(0,0,0,0.8);
+} 
+#grab {
+	height:10.7rem;
+	width: 62%;
+    background: url(../images/fz_bg.png) top center no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 3%;
+}
+.feizou{
+	width: 100%;
+    display: block;
+    margin: 3.5rem auto 0;
+}
+#grab .sure-btn,#grab .share-btn{
+	display:inline-block;
+	width:38%;
+	margin-left:10%;
+}
+#grab .sure-btn img,#grab .share-btn img {
+	width:100%;
+}
+#grab .sure-btn{
+	margin-left:5%;
+}

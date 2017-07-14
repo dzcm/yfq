@@ -1,0 +1,54 @@
+<include file="Application/Admin/View/Index/header.html" />
+<body>
+	<div class="topbar-wrap white">
+		<div class="topbar-inner clearfix"></div>
+	</div>
+	<div class="container clearfix">
+
+		<!--/sidebar-->
+
+		<div class="result-content">
+			<form id="from" onsubmit="return false;">
+            <input type="hidden" name="act_id" value="{$info['act_id']}">
+				<table class="insert-tab" width="100%">
+ 			<volist name="prize_info" id="i">
+						<tr>
+							<th width="20%">{$i.prize_name}</th>
+							<td width="40%">总投放：<input class="common-text required" style="width:70px" id="prize[{$i.prize_id}]"
+								name="prize[{$i.prize_id}]" value="{$i.number}" type="number"></td>
+                                <td  width="40%">已领取数量：{$i.use_num}</td>
+						</tr>
+			</volist>
+
+
+						<tr>
+							<th></th>
+							<td><input class="btn btn-primary btn6 mr10" value="添加"
+								type="submit"><i class="require-red" id="message"></i></td>
+						</tr>
+					</tbody>
+
+				</table>
+				</from>
+		</div>
+
+		<!--/main-->
+	</div>
+</body>
+</html>
+<script src="__PUBLIC__/js/com.js"></script>
+<script>
+$(".btn").click(function(){
+				var date = getFormJson('form');
+				$.post("/Admin/Prize/uptodayPrize",date,function(data,datatype){
+				layer.msg(data.message);
+				if (data.status == 200) {
+					parent.location.reload();
+					return false;
+
+				}
+				;
+
+			}, "json");
+	});
+</script>

@@ -1,0 +1,10 @@
+<script src="http://dbwxapi.sjzdezhong.com/Js/wx/wx.js"></script>
+<script>
+wx_config( '{$share["appId"]}','{$share["timestamp"]}','{$share["nonceStr"]}','{$share["signature"]}');
+share("中华抢红包，新年讨个好彩头~","http://yfq.sjzdezhong.com/Zhactivity","http://yfq.sjzdezhong.com/Public/zhonghua/images/share.jpg","中华抢红包，新年讨个好彩头~","mysuccess");
+function mysuccess(){
+	 $.post("/Zhactivity/Activity/share",{},function(data,datatype){
+		 self.location.reload(); 
+			}, "json");
+	}
+</script>

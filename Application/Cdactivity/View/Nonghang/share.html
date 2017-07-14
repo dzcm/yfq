@@ -1,0 +1,22 @@
+<script src="http://dbwxapi.sjzdezhong.com/Js/wx/wx.js"></script>
+<script>
+wx_config( '{$share["appId"]}','{$share["timestamp"]}','{$share["nonceStr"]}','{$share["signature"]}');
+
+share("掌银送好礼，抽奖嗨不停—中国农业承德分行客户专享","http://yfq.duobakeji.com/Cdactivity?rand={$rand}","http://yfq.duobakeji.com/Public/cdnonghang/images/share.jpg","掌银送好礼，抽奖嗨不停—中国农业承德分行客户专享","mysuccess");
+function mysuccess(){
+	 $.post("/Cdactivity/Activity/share",{},function(data,datatype){
+		 
+			}, "json");
+	}
+
+  // 7.2 获取当前地理位置>
+function dizhi(){
+	getLocation("mylocation");
+		
+	}
+	
+function reconfig(){
+	wx_config( '{$share["appId"]}','{$share["timestamp"]}','{$share["nonceStr"]}','{$share["signature"]}');
+	}
+
+</script>

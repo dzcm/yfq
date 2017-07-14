@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta charset="UTF-8">
+		<title>中国农业银行 张家口分行</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+		<meta name="format-detection" content="telephone=NO">
+		<meta name="apple-touch-fullscreen" content="YES"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="HandheldFriendly" content="True">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/nonghang/css/style.css"/>
+		<script src="__PUBLIC__/nonghang/js/jquery.min.js"></script>
+		<script>
+			(function(win,doc){
+				function change(){
+					doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+				}
+				change();
+				win.addEventListener('resize',change,false);
+			})(window,document);
+		</script>
+		</head>
+		<body class="hj-mess">
+<div class="wap-personal">
+          <div class="wap-personal-left left">
+    <div class="" ><img src="{$wx_info.headimgurl}" class="wap-tit" ></div>
+  </div>
+          <div id="round"></div>
+          <div class="wap-personal-right">{$wx_info.nickname}</div>
+        </div>
+<div class="wap-balance">
+          <div class="wap-balance-left left"><img src="__PUBLIC__/nonghang/images/yue.png" class="wap-tit"></div>
+          <div class="wap-balance-right"><span id="testid">{$last_money/100}</span>元</div>
+        </div>
+<div class="wap-record">
+          <div class=" "><img src="__PUBLIC__/nonghang/images/jilu.png" class="wap-tit"></div>
+        </div>
+<div class="table table-personal">
+          <div class="table-tab">
+    <volist name="my_prize" id="v">
+              <div class="table-wrap">
+        <div class="table-left">{$v.add_time|date='Y-m-d H:i',###}</div>
+        <div class="table-right">抽中<span>{$v['money']/100}</span>元</div>
+      </div>
+            </volist>
+   
+  </div>
+        </div>
+<div class="extract"> <span class="gz-btn btn-left left"> <img src="__PUBLIC__/nonghang/images/tixian.png"> </span> <a href="javascript:history.go(-1);" class="gz-btn left"> <img src="__PUBLIC__/nonghang/images/fanhui.png"> </a> </div>
+<div style="height:0.5rem; clear:both"></div>
+<div class="share">
+          <div  class="wap-tc"> <img src="__PUBLIC__/nonghang/images/btn_01.png" class="wap-tc-pic">
+    <div class="wap-tc-jg"><span id="money">{$last_money/100}</span>元</div>
+    <p class="wap-tc-title"> 温馨提示：点击“确定”按钮后<br />
+              请返回至聊天界面，关注我们的红包<br />
+              消息通知哦！</p>
+    <a href="#"><img src="__PUBLIC__/nonghang/images/affirm.png" class="wap-tc-s3 wap-tc-sub"></a> </div>
+        </div>
+<div class="buzu">
+          <div  class="wap-tc"> <img src="__PUBLIC__/nonghang/images/buzu.png" class="wap-tc-pic">
+    <div class="wap-tc-jg"><span>{$last_money/100}</span>元</div>
+    <p class="wap-tc-title"> 温馨提示：您的红包金额累计<br />
+              不足1元无法提现！<br /></p>
+    <a href="#"><img src="__PUBLIC__/nonghang/images/affirm.png" class="wap-tc-s3"></a> </div>
+        </div>
+<script>
+			var last_money={$last_money};  
+			
+			$('.btn-left').click(function (){
+				if(last_money<100){
+					$('.buzu').show();
+				}else{
+					  $.post("{:U('getRedPacket')}",{},function(data,datatype){
+					if(data.status==200){
+						$('#share').html(data.date.money/100+"元");
+						$('.share').show();
+						}else{
+							alert(data.message);
+							}
+
+			}, "json");
+				}
+				
+			})
+			$(".wap-tc-sub").click(function(){
+				history.go(0);
+				});
+			$('.wap-tc-s3').click(function (){
+				$('.share').hide();
+				$('.buzu').hide();
+			})
+		</script>
+</body>
+</html>

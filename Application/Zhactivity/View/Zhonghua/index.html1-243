@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中华游戏首页</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+		<meta name="format-detection" content="telephone=NO">
+		<meta name="apple-touch-fullscreen" content="YES"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="HandheldFriendly" content="True">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/zhonghua/css/index.css"/>
+		<script src="__PUBLIC__/zhonghua/js/jquery.min.js"></script> 
+		<script>
+        (function(win,doc){
+            function change(){
+                doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            }
+            change();
+            win.addEventListener('resize',change,false);
+        })(window,document);
+    </script>
+	</head>
+	<body class="wrap-body">
+		<!-- 手机号弹出框 -->
+		<div class="wrap-phone">			 
+			<div class="wap-tc">
+				<p class="wap-tc-title">请填写手机号，方便中奖联系你哦~</p>
+				<input id="UserPhone" class="phone" type="text" value="" placeholder="请输入手机号" maxlength="11">
+			<p class="test1"></p>
+			<a href="#" class="queren"><img src="__PUBLIC__/zhonghua/images/dete.png" class="dete"></a>				
+			</div> 
+		</div>				
+		<!-- 手机号弹出框 end -->
+		
+		<div class="wrap-sum">		
+			<img src="__PUBLIC__/zhonghua/images/prize-bg.png">			 
+		</div> 
+		
+		<div class="wrap-btn">
+			<!-- 游戏指南 -->
+	   		<a href="Directions" class="mj-btn">
+	   			<img src="__PUBLIC__/zhonghua/images/manual.png">
+	   		</a>
+			<!-- 游戏开始 -->
+	   		<a href="javascript:;" class="wrap-start">
+	   			<img src="__PUBLIC__/zhonghua/images/start.png">
+	   		</a>
+		</div>
+		
+		<!-- 活动时间 -->
+		<div class="wrap-hd">
+	   		 <span>活动时间：</span>2017年1月25日至2017年2月2日
+		</div>
+		
+		<script>
+		var phone='{$user_info.phone}';
+		if(phone!=''){
+			$(".phone").val(phone);
+			$(".phone").attr("readonly",true);
+			}
+			$('.wrap-start').click(function (){ 
+				$('.wrap-phone').show();
+			})			
+			$('.queren').click(function (){	
+				var tel = $("#UserPhone").val();
+				if (tel == '') { 
+					$(".test1").text("请输入手机号");
+					return false;
+				}						
+				var regu = /^1[3|4|5|8][0-9]\d{4,8}$/;
+			    var re = new RegExp(regu);
+			    if (!re.test(tel)) {
+					$(".test1").text("输入错误，重新输入"); 
+					return false;
+			    }else{
+		$.ajax({  
+         type : "POST",  
+          url : "{:U('/Zhactivity/Index/addPhone')}",  
+          data : {phone:tel},  
+          async : false,  
+          success : function(data){  
+            	if(data.status==200){
+						$(".test1").text(data.message); 
+						$('.wrap-phone').hide(); 
+						window.location.href="{:U('/Zhactivity/Index/myindex')}";
+						}else{
+							$(".test1").text(data.message); 
+						}
+          }  
+     });
+					
+					
+				}					   
+			})  
+		</script>
+	</body>
+    <include file="Application/Zhactivity/View/Zhonghua/share.html" />
+</html>

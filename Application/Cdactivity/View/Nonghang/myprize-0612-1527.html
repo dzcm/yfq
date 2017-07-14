@@ -1,0 +1,148 @@
+
+	<div class="cd-yfq">	
+		
+		<div class="yfq-close"><img src="__PUBLIC__/cdnonghang/images/close.png"></div>
+		<!-- 头像div	 -->
+		<div class="warp-personal"> 
+			<img src="{$wx_info.headimgurl}"  >
+			<span>{$wx_info.nickname}</span> 
+		</div>
+		<!-- 余额div -->
+		<div class="wap-balance">
+			<div class="wap-balance-left left"><img src="__PUBLIC__/cdnonghang/images/yue.png" class="wap-tit"></div>
+			<div class="wap-balance-right"><span id="testid" class="last_money">{$last_money/100}</span>元</div>
+		</div>
+		
+		<!-- 开箱记录 -->
+		<div class="wap-record">
+			<img src="__PUBLIC__/cdnonghang/images/jilu.png" class="wap-tit">
+		</div>		
+		
+		<!-- 中奖信息列表 -->
+		<div class="table-personal">
+			<div class="table-top">
+			   
+		    </div>
+			<div class="table-tab">
+          
+    <!--<div class="table-wrap">
+              <div class="table-left">{$v.add_time|date='Y-m-d H:i',###}</div>
+              <div class="table-right"><span>{$v['money']/100}</span>元</div>
+            </div>-->
+
+			</div>  
+		</div>
+		<!-- 底部按钮部分 -->
+		<div class="extract">
+			<span class="gz-btn btn-left left">
+				<img src="__PUBLIC__/cdnonghang/images/tixian.png">
+			</span>
+			<a href="javascript:;" class="gz-btn left"  id="fenxiang">
+				<img src="__PUBLIC__/cdnonghang/images/dese.png">
+			</a>
+		</div>
+		<div style="height:2rem; clear:both"></div>  		
+		
+		
+		<!-- 奔走相告-分享 -->
+		<div class="wrap-dese" id="bzxg001">
+			<img src="__PUBLIC__/cdnonghang/images/shares.png" style="width:100%">
+		</div>
+		<!-- 奔走相告-分享 end -->
+		
+		<!-- 提现成功 -->
+		<div class="share">
+			<div  class="wap-txcg" id="shows" style=" ">
+				<img src="__PUBLIC__/cdnonghang/images/btn_01.png" class="wap-tc-pic">
+				<div class="wap-tc-jg"><span id="my_money">1.5</span>元</div>
+				<p class="wap-tc-title"> <img src="__PUBLIC__/cdnonghang/images/jishi.png" /></p>
+				<a href="#" class="wap-cg"><img src="__PUBLIC__/cdnonghang/images/queding.png"></a>				
+			</div> 
+		</div>	
+		<!-- 提现成功 end -->
+		
+		<!-- 提现提示 -->
+	 	<div class=" confirm">
+			<div  class="wap-wenxin">
+				<div class="close01"><img src="__PUBLIC__/cdnonghang/images/close.png"></div>
+				<div class="tixian-pic"> 
+					 <img src="__PUBLIC__/cdnonghang/images/tixianwenzi.png"> 
+				</div>				
+				<div class="wenxinbtn"> 
+					<a href="#"><img src="__PUBLIC__/cdnonghang/images/quxiao.png" class="quxiao"></a>
+					<a href="#"><img src="__PUBLIC__/cdnonghang/images/affirma.png" class="queren"></a>
+				</div>	 		
+			</div> 
+		</div>
+		<!-- 提现提示 end -->		
+	
+		<!-- 提现不足 -->
+		<div class=" buzu">
+			<div class="buzu-tc"> 
+				<span class="buzu-tc3"><img src="__PUBLIC__/cdnonghang/images/queding.png"></span> 
+			</div>
+        </div>		
+		<!-- 提现不足 end -->
+		<!-- 页面加载中 -->
+		<div class="result-wrap-jz" id="load">
+			<div><img src="__PUBLIC__/cdnonghang/images/loading.gif"><br /><br />页面加载中...</div>	   		 
+		</div> 
+		<!-- 页面加载中 end -->
+	<script>
+			var last_money=0;  
+			
+			$('.btn-left').click(function (){	
+				if(last_money<100){
+					$('.confirm').hide();
+					$('.buzu').show();
+				}else{
+					$('.confirm').show();
+				}	
+			})
+			$('.quxiao').click(function (){				
+				$('.confirm').hide();	
+			})  
+			
+			$('.queren').click(function (){				
+				$('.confirm').hide();
+				$('#load').show();
+				if(last_money<100){
+					$('#load').hide();					
+					$('.confirm').hide();
+					$('.buzu').show();
+				}else{
+					  $.post("{:U('getRedPacket')}",{},function(data,datatype){
+					if(data.status==200){
+						$('#my_money').html(data.date.money/100+"元");
+						$('#load').hide();
+						$('.share').show();
+						}else{
+							alert(data.message);
+							}
+
+			}, "json");
+				}
+				
+			})
+			  
+			  
+			$(".wap-tc-sub").click(function(){
+				window.location.href="/Bdactivity/Prize/myprize";
+				});
+			$('.wap-cg').click(function (){
+				$('.share').hide();
+				$('.buzu').hide();
+			})
+						$(".buzu-tc3").click(function(){
+				$('.buzu').hide();
+				});
+			$('#fenxiang').click(function () { 
+            $('#bzxg001').show();
+        })
+        $('#bzxg001').click(function () {
+            $(this).hide();
+        })
+		</script> 
+		  
+	</div>
+</html>

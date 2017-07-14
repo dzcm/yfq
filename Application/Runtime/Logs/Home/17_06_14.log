@@ -1,0 +1,12 @@
+[ 2017-06-14T14:41:27+08:00 ] 188.188.188.118 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010681s ]
+NOTIC: [8] Undefined index: appinfo E:\PHP\WWW\yfq\Application\Home\Controller\CommonController.class.php 第 10 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008033s ]
+

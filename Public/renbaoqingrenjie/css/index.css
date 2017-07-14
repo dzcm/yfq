@@ -1,0 +1,149 @@
+body,html{width:100%; height:100%; margin:0; padding:0; }
+ul{padding:0; margin:0; list-style: none;}
+li{padding:0; list-style: none;}
+*{
+  padding: 0;
+  margin: 0;
+}
+a{ -webkit-tap-highlight-color:rgba(255,0,0,0);}
+a:focus{
+  outline: none;
+}
+.index {
+  background:url(../images/index-bg.png) top center repeat-y;
+  background-size:100%; 
+  font-family: "微软雅黑";
+  overflow:auto;
+  box-sizing:border-box;
+  position:relative;
+}
+.title {
+  width:100%;
+}
+.prize-wrap {
+  width:86%;
+  overflow:hidden;
+  display:block;
+  margin:-0.6rem auto 0;
+}
+.prizes {
+  width:33%;
+  float:left;
+  height:5rem;
+}
+.prizes img {
+  width:100%;
+}
+.rule,.romantic,.prize-txt,.zhu {
+  width:100%;
+}
+.tel {
+  width:100%;
+  height:1.5rem;
+  background-color:#f41f4e;
+  display:inline-block;
+}
+.tel img {
+  width:27%;
+  display:block;
+  margin:0 auto;
+}
+.lp-tit,.bottom{
+  width:100%;
+}
+.result-wrap {
+  position: fixed;
+  background: rgba(0,0,0,0.4);
+  width:100%;
+  height:100%;
+}
+.result-bg {
+  width:96%;
+  height:12rem;
+  background: url(../images/prize-wrap.png) top center no-repeat;
+  background-size:100% 100%;
+  display:block;
+  margin:5.2rem auto 0;
+  position: relative;
+}
+.result-bg h1,.result-bg p,.re-txt{
+  text-align:center;
+  color:#f41f4e;
+  font-family:"微软雅黑";
+}
+.result-bg h1 {
+  font-size:1rem;
+  padding-top:5.2rem;
+  font-weight:bold;
+}
+.result-bg  p{
+  font-size:0.9rem;
+  padding-top:0.3rem;
+}
+.sure-btn {
+  width:38%;
+  display:block;
+  margin:0.4rem auto 0;
+}
+.sure-btn img {
+  width:100%;
+}
+.re-txt {
+  font-size:0.7rem;
+  font-weight:bold;
+  padding-top:3.2rem;
+}
+.mess-form {
+  width:60%;
+  overflow:hidden;
+  display:block;
+  margin:0.2rem auto 0;
+}
+.input-wrap {
+  width:100%;
+  background-color:#fff;
+  height:1.4rem;
+  border-radius: 10px;
+  margin-top:0.1rem;
+}
+.input-txt {
+  color:#8e8e8e;
+  font-family:"微软雅黑";
+  font-size:0.6rem;
+  width:28%;
+  height:1.4rem;
+  line-height:1.4rem;
+  padding-left:5%;
+  float:left;
+}
+input {
+  background:rgba(255,255,255,0);
+  width:65%;
+  float:left;
+  height:1.4rem;
+  color:#333;
+  font-size:0.6rem;
+  padding:0;
+  border:none;
+  display:inline-block;
+}
+input:focus{
+  outline: none;
+}
+.tj-btn{
+    width: 80%;
+    display: block;
+    margin: 3.7rem auto 0;
+    border: none;
+    background:transparent;
+}
+.tj-btn img {
+  width:100%;
+}
+.ch {
+  position: absolute;
+    right: 9%;
+    top: 7%;
+    font-size: 1.5rem;
+    opacity: 0.6
+}

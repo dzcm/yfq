@@ -1,0 +1,204 @@
+[ 2017-06-10T09:35:39+08:00 ] 188.188.188.118 /Bdactivity/Prize/myprize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+NOTIC: [8] Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' E:\PHP\WWW\yfq\Application\Bdactivity\Controller\CommonController.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `yfq_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `yfq_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yfq_game_log` [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `yfq_game_log` [ RunTime:0.0133s ]
+SQL: SELECT * FROM yfq_game_log g INNER JOIN yfq_prize p on g.prize_id=p.prize_id  WHERE ( g.user_id=2 ) ORDER BY g.add_time desc  [ RunTime:0.0274s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined index: headimgurl E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\6c0da7916a00a8ad13f1724c9824c26e.php 第 26 行.
+NOTIC: [8] Undefined index: nickname E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\6c0da7916a00a8ad13f1724c9824c26e.php 第 26 行.
+NOTIC: [8] Undefined variable: rand E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\6c0da7916a00a8ad13f1724c9824c26e.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2017-06-10T09:36:45+08:00 ] 188.188.188.118 /Bdactivity/Directions.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+NOTIC: [8] Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' E:\PHP\WWW\yfq\Application\Bdactivity\Controller\CommonController.class.php 第 79 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: rand E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\bfbc395dc7056c509e5d4359e74cab00.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2017-06-10T09:36:48+08:00 ] 188.188.188.118 /Bdactivity/Directions.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' E:\PHP\WWW\yfq\Application\Bdactivity\Controller\CommonController.class.php 第 79 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined variable: rand E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\bfbc395dc7056c509e5d4359e74cab00.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
+
+[ 2017-06-10T09:37:01+08:00 ] 188.188.188.118 /Bdactivity/Prize/myprize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+NOTIC: [8] Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' E:\PHP\WWW\yfq\Application\Bdactivity\Controller\CommonController.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `yfq_user` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `yfq_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_game_log` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `yfq_game_log` [ RunTime:0.0129s ]
+SQL: SELECT * FROM yfq_game_log g INNER JOIN yfq_prize p on g.prize_id=p.prize_id  WHERE ( g.user_id=2 ) ORDER BY g.add_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined index: headimgurl E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\6c0da7916a00a8ad13f1724c9824c26e.php 第 26 行.
+NOTIC: [8] Undefined index: nickname E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\6c0da7916a00a8ad13f1724c9824c26e.php 第 26 行.
+NOTIC: [8] Undefined variable: rand E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\6c0da7916a00a8ad13f1724c9824c26e.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2017-06-10T09:40:06+08:00 ] 188.188.188.118 /Bdactivity/Directions.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' E:\PHP\WWW\yfq\Application\Bdactivity\Controller\CommonController.class.php 第 79 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined variable: rand E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\bfbc395dc7056c509e5d4359e74cab00.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2017-06-10T09:40:11+08:00 ] 188.188.188.118 /Bdactivity/Prize/myprize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' E:\PHP\WWW\yfq\Application\Bdactivity\Controller\CommonController.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `yfq_user` [ RunTime:0.0348s ]
+SQL: SELECT * FROM `yfq_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_game_log` [ RunTime:0.0203s ]
+SQL: SHOW COLUMNS FROM `yfq_game_log` [ RunTime:0.0264s ]
+SQL: SELECT * FROM yfq_game_log g INNER JOIN yfq_prize p on g.prize_id=p.prize_id  WHERE ( g.user_id=2 ) ORDER BY g.add_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined index: headimgurl E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\6c0da7916a00a8ad13f1724c9824c26e.php 第 26 行.
+NOTIC: [8] Undefined index: nickname E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\6c0da7916a00a8ad13f1724c9824c26e.php 第 26 行.
+NOTIC: [8] Undefined variable: rand E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\6c0da7916a00a8ad13f1724c9824c26e.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2017-06-10T09:40:18+08:00 ] 188.188.188.118 /Bdactivity/Directions.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+NOTIC: [8] Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' E:\PHP\WWW\yfq\Application\Bdactivity\Controller\CommonController.class.php 第 79 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: rand E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\bfbc395dc7056c509e5d4359e74cab00.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000497s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2017-06-10T09:40:22+08:00 ] 188.188.188.118 /Bdactivity/Prize/myprize.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+NOTIC: [8] Use of undefined constant REQUEST_URI - assumed 'REQUEST_URI' E:\PHP\WWW\yfq\Application\Bdactivity\Controller\CommonController.class.php 第 79 行.
+SQL: SHOW COLUMNS FROM `yfq_user` [ RunTime:0.0265s ]
+SQL: SELECT * FROM `yfq_user` WHERE `user_id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_game_log` [ RunTime:0.0894s ]
+SQL: SHOW COLUMNS FROM `yfq_game_log` [ RunTime:0.0486s ]
+SQL: SELECT * FROM yfq_game_log g INNER JOIN yfq_prize p on g.prize_id=p.prize_id  WHERE ( g.user_id=2 ) ORDER BY g.add_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined index: headimgurl E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\6c0da7916a00a8ad13f1724c9824c26e.php 第 26 行.
+NOTIC: [8] Undefined index: nickname E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\6c0da7916a00a8ad13f1724c9824c26e.php 第 26 行.
+NOTIC: [8] Undefined variable: rand E:\PHP\WWW\yfq\Application\Runtime\Cache\Bdactivity\6c0da7916a00a8ad13f1724c9824c26e.php 第 157 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001289s ]
+

@@ -1,0 +1,99 @@
+<include file="Application/Admin/View/Index/index.html" />
+<!--/sidebar-->
+
+<div class="main-wrap">
+ <!-- <div class="search-wrap">
+    <div class="search-content">
+
+    </div>
+  </div>-->
+  <div>
+<ul class="sub-menu">
+<li>
+<a onclick="add()">
+<i class="icon-font"></i>
+添加奖品
+</a>
+</li>
+</ul>
+</div>
+  <div class="result-wrap">
+    <form name="myform" id="myform" method="post">
+      <div class="result-title"> </div>
+      <div class="result-content">
+        <table class="result-tab" width="100%">
+          <tr>
+            <th>名称</th>
+            <th>所属机构</th>
+            <th>所属活动</th>
+            <th>奖品金额</th>
+            <th>奖品数量</th>
+            <th>奖品等级</th>
+            <th>操作</th>
+          </tr>
+          <volist name="prize_info" id="i">
+            <tr>
+              <td>{$i.prize_name}</td>
+               <td>{$branch[$i['type_id']]}</td>
+               <td>{$activity[$i['act_id']]}</td>
+ 				<td><span class="last_money_{$i.type_id}">{$i['money']/100}</span></td>
+                <td>{$i['number']}</td>
+                <td>{$i.level}</td>
+                <td><a href="#" onclick="update({$i.prize_id})">&nbsp;修改&nbsp;</a>&nbsp;|&nbsp;<a href="#" onclick="del({$i.prize_id})">&nbsp;删除&nbsp;</a></td>
+            </tr>
+          </volist>
+        </table>
+        <div class="list-page">
+          <ul class="pagination" >
+            <li style=" float:left"> <a href="{:U('index')}?page=1">首页</a> </li>
+            <for start="$page" end="$page+4">
+              <php> if($i <= $pages)
+                { </php>
+              <li style=" float:left"> <a href="{:U('index')}?page={$i}">{$i}</a> </li>
+              <php>}</php>
+            </for>
+            <li style=" float:left"> <a href="{:U('index')}?page={$pages}">尾页</a> </li>
+            <li style=" float:left"><a href="javascript:void(0)">当前第{$page}页,共{$count}条数据,{$pages}页</a></li>
+          </ul>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!--/main-->
+</div>
+</body></html>
+<script>
+function del(prize_id){
+	$.post("{:U('del')}",{prize_id:prize_id},function(data,datatype){
+				layer.msg(data.message);
+					if(data.status==200){
+						location.reload();
+						}
+
+			}, "json");
+	}
+function add(){
+
+layer.open({
+  type: 2,
+  title: '添加奖品',
+  shadeClose: true,
+  shade: 0.8,
+  area: ['500px', '500px'],
+  content: "{:U('addPrize')}" //iframe的url
+}); 
+
+	}
+	function update(id){
+
+		layer.open({
+ 			 type: 2,
+  			title: '添加',
+  			shadeClose: true,
+  			shade: 0.8,
+  			area: ['580px', '580px'],
+  			content: "{:U('addPrize')}?id="+id //iframe的url
+});	
+		}
+</script>

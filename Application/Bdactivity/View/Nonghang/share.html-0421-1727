@@ -1,0 +1,10 @@
+﻿<script src="http://dbwxapi.sjzdezhong.com/Js/wx/wx.js"></script>
+<script>
+wx_config( '{$share["appId"]}','{$share["timestamp"]}','{$share["nonceStr"]}','{$share["signature"]}');
+share("掌银送好礼，抽奖嗨不停—中国农业银行张家口分行客户专享","http://yfq.duobakeji.com/Bdactivity","http://yfq.duobakeji.com/Public/nonghang/images/share.png","掌银送好礼，抽奖嗨不停—中国农业银行张家口分行客户专享","mysuccess");
+function mysuccess(){
+	 $.post("/Bdactivity/Activity/share",{},function(data,datatype){
+		 
+			}, "json");
+	}
+</script>

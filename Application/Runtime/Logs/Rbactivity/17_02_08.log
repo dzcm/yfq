@@ -1,0 +1,65 @@
+[ 2017-02-08T10:01:29+08:00 ] 188.188.188.153 /Rbactivity
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+NOTIC: [8] Undefined index: user_info E:\PHP\WWW\yfq\Application\Rbactivity\Controller\IndexController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: rbuser_info E:\PHP\WWW\yfq\Application\Runtime\Cache\Rbactivity\41bc16ccf6349cb11483c1413b80c90f.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000451s ]
+
+[ 2017-02-08T10:08:04+08:00 ] 188.188.188.153 /Rbactivity/Index/addUser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `yfq_user` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `yfq_user` WHERE ( phone='13269866589' and type_id=4 and car_number='冀123658' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `yfq_user` (`phone`,`car_number`,`real_name`,`add_time`,`type_id`) VALUES ('13269866589','冀123658','张家口农行','1486519684','4') [ RunTime:0.0259s ]
+SQL: SELECT * FROM `yfq_user` WHERE ( phone='13269866589' and car_number='冀123658' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-02-08T10:08:05+08:00 ] 188.188.188.153 /Rbactivity/Activity.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Use of undefined constant VIEWDIR - assumed 'VIEWDIR' E:\PHP\WWW\yfq\Application\Rbactivity\Controller\ActivityController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `yfq_game_log` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `yfq_branch_type` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `yfq_branch_type` WHERE `type_id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yfq_activity` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_activity` WHERE `type_id` = 4 AND `status` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_prize` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `yfq_prize` WHERE ( if_del=1 and act_id=6 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_prize_day_log` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( add_date="2017-02-08" and act_id=6 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yfq_game_log` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `yfq_game_log` WHERE ( prize_id=14 and user_id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yfq_prize_day_log` WHERE ( prize_id=14 and add_date="2017-02-08" ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yfq_user_day_log` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `yfq_user_day_log` WHERE `user_id` = 2 AND `add_date` = '2017-02-08' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `yfq_user_day_log` (`user_id`,`type_id`,`add_date`,`totle_times`) VALUES ('2','4','2017-02-08','1') [ RunTime:0.0253s ]
+SQL: SELECT * FROM `yfq_user_day_log` WHERE `user_id` = 2 AND `type_id` = 4 AND `add_date` = '2017-02-08' LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yfq_prize_day_log` SET `use_num`=use_num+1 WHERE ( prize_id=14 and add_date="2017-02-08" ) [ RunTime:0.0288s ]
+SQL: UPDATE `yfq_prize` SET `use_num`=use_num+1 WHERE ( prize_id=14 ) [ RunTime:0.0289s ]
+SQL: UPDATE `yfq_user_day_log` SET `use_times`=use_times+1 WHERE ( user_log_id=2 ) [ RunTime:0.0295s ]
+SQL: INSERT INTO `yfq_game_log` (`user_id`,`act_id`,`type_id`,`prize_id`,`add_time`) VALUES ('2','6','4','14','1486519685') [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `yfq_user` [ RunTime:0.0190s ]
+SQL: UPDATE `yfq_user` SET `totle_money`=totle_money+0 WHERE ( user_id=2 ) [ RunTime:0.0008s ]
+

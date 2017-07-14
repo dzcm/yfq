@@ -1,0 +1,181 @@
+<include file="Application/Admin/View/Index/header.html" />
+<body>
+	<div class="topbar-wrap white">
+		<div class="topbar-inner clearfix"></div>
+	</div>
+	<div class="container clearfix">
+
+		<!--/sidebar-->
+
+		<div class="result-content">
+			<form id="from" onsubmit="return add_user();">
+            <input type="hidden" name="act_id" value="{$info['act_id']}">
+				<table class="insert-tab" width="100%">
+					<tbody>
+                    						<tr>
+							<th><i class="require-red"></i>所属机构：</th>
+							<td><select id="type_id" class="common-text required"
+								name="type_id">
+                                <volist name="branch_info" id="i">
+                                <option value="{$i.type_id}">{$i.name}</option>
+                                </volist>
+									</select></td>
+						</tr>
+                                            						<tr>
+							<th><i class="require-red"></i>活动城市：</th>
+                          
+							<td><select id="city_codes" class="common-text required"
+								name="city_codes">
+                                  <option value="all" selected>无限制</option>
+                                <foreach  name="city_codes" item="v" key='k'>
+                                <option value="{$k}">{$v}</option>
+                                </foreach >
+									</select>
+                                    <br> <span id='check_city_codes'><volist  name="my_city_code" id="va">
+                               <span id="one_city_code_{$va}"><input name="my_city_code[{$va}]" type="checkbox"  checked="checked" value="{$va}" />{$city_codes[$va]}&nbsp;&nbsp;&nbsp;</span></volist > </span>
+                                    </td>
+						</tr>
+						<tr>
+							<th width="120"><i class="require-red">*</i>活动名称</th>
+							<td><input class="common-text required" id="act_name"
+								name="act_name" size="10" value="{$info.act_name}" type="text"></td>
+						</tr>
+						<tr>
+							<th><i class="require-red"></i>开始时间：</th>
+							<td><input class="common-text required layer_date"  id="start_time"
+								name="start_time" size="10" value="{$info.start_time|date="Y-m-d",###}" onFocus="this.value=''" type="text"></td>
+						</tr>
+                        						<tr>
+							<th><i class="require-red"></i>结束时间：</th>
+							<td><input class="common-text required layer_date"  id="end_time"
+								name="end_time" size="10" value="{$info.end_time|date="Y-m-d",###}" onFocus="this.value=''" type="text"></td>
+						</tr>
+                        <tr>
+							<th><i class="require-red"></i>可无条件参加：</th>
+							<td><input class="common-text required" id="free_times"
+								name="free_times" size="10" value="{$info.free_times}" type="number"><span style="color:#666"></span></td>
+						</tr>
+                        <tr>
+							<th><i class="require-red"></i>可支付参加：</th>
+							<td><input class="common-text required" id="pay_times"
+								name="pay_times" size="10" value="{$info['pay_times']}" type="number"><span style="color:#666">单次支付可获取活动次数</span></td>
+						</tr>
+                                                <tr>
+							<th><i class="require-red"></i>最低支付金额：</th>
+							<td><input class="common-text required" id="pay_money"
+								name="pay_money" size="10" value="{$info['pay_money']/100}" type="text"><span style="color:#666"></span></td>
+						</tr>
+                                                                        <tr>
+							<th><i class="require-red"></i>有效支付次数：</th>
+							<td><input class="common-text required" id="valid_pay_num"
+								name="valid_pay_num" size="10" value="{$info['valid_pay_num']}" type="number"><span style="color:#666">单天有效的支付获取活动机会的次数</span></td>
+						</tr>
+                                                                                                <tr>
+							<th><i class="require-red"></i>可分享参加：</th>
+							<td><input class="common-text required" id="share_times"
+								name="share_times" size="10" value="{$info['share_times']}" type="number"><span style="color:#666">单次分享可获取次数</span></td>
+						</tr>
+                        							<th><i class="require-red"></i>有效分享次数：</th>
+							<td><input class="common-text required" id="valid_share_num"
+								name="valid_share_num" size="10" value="{$info['valid_share_num']}" type="number"><span style="color:#666">单天有效分享的次数</span></td>
+						</tr>
+                                                							<th><i class="require-red"></i>奖品分布比例：</th>
+							<td class='all_prize_info'></td>
+						</tr>
+
+
+						<tr>
+							<th></th>
+							<td><input class="btn btn-primary btn6 mr10" value="添加"
+								type="submit"><i class="require-red" id="message"></i></td>
+						</tr>
+					</tbody>
+
+				</table>
+				</from>
+		</div>
+
+		<!--/main-->
+	</div>
+</body>
+</html>
+<script src="__PUBLIC__/js/com.js"></script>
+<script>
+/*选择活动城市*/
+$("#city_codes").change(function(){
+	var val=$("#city_codes").val();
+	if(val=='all'){
+		$("#check_city_codes").html('');
+		}else{
+			$("#one_city_code_"+val).remove();
+			var city_name=$("#city_codes").find("option:selected").text();
+			var str='<span id="one_city_code_'+val+'"><input name="my_city_code['+val+']" type="checkbox"  checked="checked" value="'+val+'" />'+city_name+'&nbsp;&nbsp;&nbsp;</span>';
+			$("#check_city_codes").append(str);
+			$(this).css("readonly","readonly");
+			
+			}
+	
+	});
+
+/*选择活动城市end*/
+
+
+
+var act_id="{$info['act_id']}";
+if(act_id!=""){
+	$("#type_id option[value='{$info.type_id}']").attr("selected", true);
+	get_prize();	
+	}
+
+
+var prize_ratio='{$info.prize_ratio}';
+if(prize_ratio!=""){
+	$.each($.parseJSON(prize_ratio),function(key,val){
+
+		$("#prize_ratio_"+key).val(val);
+		});
+	}
+$("#type_id").change(function (){
+	get_prize();
+	});
+function get_prize(){
+	type_id="{$info['act_id']}";
+		$.ajax({  
+         type : "POST",  
+          url : "{:U('/Admin/Prize/getPrize')}",  
+          data : {act_id:type_id},  
+          async : false,  
+          success : function(data){  
+            					if(data.status!=200){
+						layer.msg(data.message);
+						}else{
+							var str="";
+						$.each(data.date,function(key,val){
+							str+=val.prize_name+' : <input class="common-text required" id="prize_ratio_'+val.prize_id+'" name="prize_ratio['+val.prize_id+']" size="10" value="0" type="number"><br>';
+							});
+							$('.all_prize_info').html(str);	
+							
+						}
+          }  
+     }); 
+}
+$("#type_id option[value='{$info.type_id}']").attr("selected", true);
+	function add_user() {
+		var date = getFormJson('form');
+		
+		{
+			$.post("{:U('addActUp')}",date,function(data,datatype){
+				layer.msg(data.message);
+				if (data.status == 200) {
+					parent.location.reload();
+					return false;
+
+				}
+
+				return false;
+
+			}, "json");
+		}
+		return false;
+	}
+</script>

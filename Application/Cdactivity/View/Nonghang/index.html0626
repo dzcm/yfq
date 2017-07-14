@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>欢乐开宝箱 天天赢大奖</title>
+		<!--<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+		<meta name="format-detection" content="telephone=NO">
+		<meta name="apple-touch-fullscreen" content="YES"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="HandheldFriendly" content="True">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/cdnonghang/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/cdnonghang/css/style.css"/>
+		<script src="__PUBLIC__/cdnonghang/js/jquery.min.js"></script>
+		<script>
+        (function(win,doc){
+            function change(){
+                doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            }
+            change();
+            win.addEventListener('resize',change,false);
+        })(window,document);
+    </script>
+	</head>
+	<body class="index">
+        <include file="Application/Cdactivity/View/Nonghang/share.html" />
+        <include file="Application/Cdactivity/View/Nonghang/myprize.html" />
+        <include file="Application/Cdactivity/View/Nonghang/directions.html" />
+	   <!--福袋结果_start-->
+	   <div class="result-wrap" style="display:none" id="result">
+	   	    <div class="result-blank"></div>
+	   	    <div class="result">
+	   	    <div class="close"></div>
+	   	    	<div class="getnum">1.5</div>
+	   	    <div class="result-btn-wrap">
+            
+	   	    	<a href="" class="srnz">
+	   	    		<img src="__PUBLIC__/cdnonghang/images/srnz.png">
+	   	    	</a>
+	   	    	<a href="javascript:;" class="bzxg" id="bzxg">
+	   	    		<img src="__PUBLIC__/cdnonghang/images/bzxg.png">
+	   	    	</a>
+	   	    </div>
+	   	    </div>
+	   </div>
+	   <!--福袋结果_end-->
+	   <!--福袋结果_未中奖_start-->
+	   <div class="result-wrap" style="display:none" id="result-bad">
+	   	    <div class="result-blank"></div>
+	   	    <div class="result result-bad">
+	   	    <div class="close"></div>
+	   	    <div class="result-btn-wrap bad-result-btn">
+	   	    	<a href="javascript:;" class="srnz" id="bad-ok">
+	   	    		<img src="__PUBLIC__/cdnonghang/images/ok.png">
+	   	    	</a>
+	   	    	<a href="javascript:;" class="bzxg" id="badbzxgs">
+	   	    		<img src="__PUBLIC__/cdnonghang/images/fx.png">
+	   	    	</a>
+	   	    </div>
+	   	    </div>
+	   </div>
+	   <!--福袋结果_未中奖_end-->
+	    <!--需要支付_start-->
+	   <div class="result-wrap" style="display:none" id="need">
+	   	    <div class="result-blank"></div>
+	   	    <div class="result need-pay">
+	   	    <div class="close"></div>
+	   	    <div class="result-btn-wrap bad-result-btn">
+	   	    	<a href="javascript:;" class="srnz mypay" id="bad-ok">
+	   	    		<img src="__PUBLIC__/cdnonghang/images/topay.png">
+	   	    	</a>
+	   	    	<a href="javascript:;" class="bzxg" id="badbzxg">
+	   	    		<img src="__PUBLIC__/cdnonghang/images/xiangyixiang.png">
+	   	    	</a>
+	   	    </div>
+	   	    </div>
+	   </div>
+	   <!--需要支付_end-->
+	   <!--游戏说明_start-->
+	   <div class="result-wrap" style="display:none" id="explain">
+	   		<div class="sm-blank"></div>
+	   		<div class="sm-wrap">
+	   			<img src="__PUBLIC__/cdnonghang/images/shuoming.png" class="shuoming">
+	   			<a href="" class="gopay">
+	   				<img src="__PUBLIC__/cdnonghang/images/quzhifu.png">
+	   			</a>
+	   		</div>
+	   </div>
+	   <!--游戏说明_end-->
+	   <!--分享_start-->
+	   <div class="result-wrap" style="display:none" id="shares">
+	   		<img src="__PUBLIC__/cdnonghang/images/shares.png" class="share-img">
+	   </div>
+	   <!--分享_end-->
+	   <!--二维码_start-->
+	   <div class="result-wrap" style="display:none" id="ewm">
+	   		<img src="__PUBLIC__/cdnonghang/images/ewm.jpg" class="ewm-img">
+	   </div>
+	   <!--二维码_end-->
+	   <script>
+	   $(function(){
+	   	//填写相应的条件,出现“福袋结果”弹框,点击分享按钮，可弹出分享弹框
+	   	//if(){
+	   	  //$("#result").css("display","block");
+	       // }
+	   	    $("#share").click(function(){
+	   		$("#shares").css("display","block");
+	        })
+
+	   		$(".close,#bzxg,#badbzxgs").click(function(){
+	   		$("#result,#result-bad,#need").css("display","none");
+	        })
+
+	        $("#shares").click(function(){
+	   		$(this).css("display","none");
+	        })
+
+	        $("#bad-ok,#badbzxg").click(function(){
+	   		$("#result-bad,#need").css("display","none");
+	        })
+	        $("#bzxg,#badbzxgs").click(function(){
+	   		$("#shares").css("display","block");
+	        })
+	   })
+	   </script>
+	   <!--<a href="" class="hdjn">
+	   		<img src="__PUBLIC__/cdnonghang/images/hdjn.png">
+	   </a>-->
+	   <div class="blank"></div>
+	   <div style="overflow:hidden;height:20%">
+	   <ul class="fd-list">
+	   	   <li>
+	   	   		<a href="javascript:"><img src="__PUBLIC__/cdnonghang/images/jin-pic002.gif"></a>
+	   	   </li>
+	   	   <li>
+	   	   		<a href="javascript:"><img src="__PUBLIC__/cdnonghang/images/jin-pic001.gif"></a>
+	   	   </li>
+	   	   <li>
+	   	   		<a href="javascript:"><img src="__PUBLIC__/cdnonghang/images/jin-pic003.gif"></a>
+	   	   </li>
+	   </ul>
+	   </div>
+	   <div style="overflow:hidden">
+	   <img src="__PUBLIC__/cdnonghang/images/fig.png" style="width:55%;display:block;margin:0 auto">
+	</div>
+	   <div class="btn-wrap">
+	   <!-- {:U('/Cdactivity/Prize/myprize')} -->
+	   		<a href="javascript:;" class="grzx-btn">
+	   			<img src="__PUBLIC__/cdnonghang/images/wdbx.png">
+	   		</a>
+	   		<!--<a href="{:U('/Cdactivity/Directions')}" class="miji"></a>-->
+	   		<!--<a href="javascript:;" class="miji" id="miji"></a>-->
+	   		<a href="javascript:;" id="miji" class="miji-wrap"></a>
+	   </div>
+	   
+	   <div class="opac" style="height:1.2rem;  position: absolute; bottom: 0; left: 0;right:0; color: #fff; font-size: 0.6rem; text-align: center; line-height: 1.2rem; background: rgba(0,0,0,0.5);">
+				游戏技术由 哆吧科技 提供
+	   </div>
+	   
+	</body>
+</html>
+
+<script>
+if("{$sub}"!="1"){
+	
+	$(".db-weixin").css("display","block");
+	}
+// 抽奖
+	function mylocation(res){
+	  $.post("{:U('/Cdactivity/Activity')}",{'lat':res.latitude,"lon":res.longitude},function(data,datatype){
+				   switch(data.status){
+					case 400:
+						 switch(data.date.code){
+							case 1:
+								$("#need").css("display","block");
+ 					 			break;
+							case 2://分享
+								alert(data.date.msg);
+  								break;
+							default:
+  								alert(data.date.msg);
+  								break;
+							}
+					
+ 					 	break;
+					case 200:
+					$(".getnum").html(data.date.money/100);					
+					$("#result").css("display","block");
+  							break;
+					case 500:
+					$("#result-bad").css("display","block");				
+  							break;
+					default:
+  					alert(data.message);	
+							}
+			}, "json");
+		}
+
+$(function(){
+		   $(".fd-list li").click(function(){
+					 dizhi();   
+			  
+			   
+			/*   $.post("{:U('/Cdactivity/Activity')}",{},function(data,datatype){
+				   switch(data.status){
+					case 400:
+						 switch(data.date.code){
+							case 1:
+								$("#need").css("display","block");
+ 					 			break;
+							case 2://分享
+								alert(data.date.msg);
+  								break;
+							default:
+  								alert(data.date.msg);
+  								break;
+							}
+					
+ 					 	break;
+					case 200:
+					$(".getnum").html(data.date.money/100);					
+					$("#result").css("display","block");
+  							break;
+					case 300:
+					$("#result-bad").css("display","block");				
+  							break;
+					default:
+  					alert(data.message);	
+							}
+			}, "json");*/
+			   
+			   });
+//支付
+$(".mypay").click(function(){
+
+
+				$.post("{:U('/Cdactivity/Pay')}",{},function(data,datatype){
+					data=data.trim();
+					var info=JSON.parse(data);
+					if(info.status==200){
+						window.location.href=info.date.url;
+						}else{
+							alert(info.message);
+							}﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿
+			}, "text");﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿
+				
+				});
+				
+});
+ 
+
+</script>
+   <script>
+	   $(function(){
+	   	$("#text").click(function(){
+	   		$("#result").css("display","block");
+	        })
+	   	//填写相应的条件,出现“福袋结果”弹框,点击分享按钮，可弹出分享弹框
+	   	//if(){
+	   	  //$("#result").css("display","block");
+	       // }
+	   	$("#share").click(function(){
+	   		$("#shares").css("display","block");
+	        })
+	   	$("#te").click(function(){
+	   		$("#result-bad").css("display","block");
+	        })
+
+	   		$(".close").click(function(){
+	   		$("#result").css("display","none");
+	        })
+	   		$(".close").click(function(){
+	   		$("#result-bad").css("display","none");
+	        })
+	        $(".close").click(function(){
+	   		$("#need").css("display","none");
+	        })
+
+	   	
+	   		$("#bzxg").click(function(){
+	   		$("#result").css("display","none");
+	   		$("#shares").css("display","block");
+	        })
+	        $("#shares").click(function(){
+	   		$(this).css("display","none");
+	        })
+	        $("#mlclosr").click(function(){
+	   		$("#jinnang").css("display","none");
+	        })
+
+	        $("#bad-ok").click(function(){
+	   		$("#result-bad").css("display","none");
+	        })
+	        $("#badbzxg").click(function(){
+	   		$("#result-bad").css("display","none");
+			
+	        })
+			$(".wzxx").click(function(){
+				$("#need").css("display","none");
+				});
+		    $("#miji").click(function(){
+				$("#jinnang").show();
+				});
+	    //填写条件,出现“游戏说明”弹框
+	   	//if(){
+	   	  //$("#explain").css("display","block");
+	       // }
+		   
+		   
+		   //广告
+		   $(".opac").fadeOut(5000); 
+		   
+		   //我的宝箱
+		   $(".grzx-btn").click(function(){
+			   $.post("{:U('/Cdactivity/Prize/myjsonprize')}",{},function(data,datatype){
+
+				   var mydata=$.parseJSON(data);
+				   
+				   last_money=mydata.last_money/100;
+				   $(".table-tab").html("");
+				   $(".last_money").html(last_money);
+					$.each(mydata.myprize,function(k,v){
+						var money=v.money/100;
+						var str='    <div class="table-wrap">';
+              str+='<div class="table-left">'+v.add_time+'</div>';
+               str+='<div class="table-right"><span>'+money+'</span>元</div>';
+             str+='</div>';
+			 $(".table-tab").append(str);
+						});
+			}, "text");﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿
+				$(".cd-yfq").css("display","block");
+			});
+			
+			$(".yfq-close").click(function(){
+				$(".cd-yfq").css("display","none");
+			});
+		   
+	   })
+	   </script>

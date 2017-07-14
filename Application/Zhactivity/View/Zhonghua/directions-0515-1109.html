@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中华游戏</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+		<meta name="format-detection" content="telephone=NO">
+		<meta name="apple-touch-fullscreen" content="YES"/>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+		<meta name="HandheldFriendly" content="True">
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/zhonghua/css/index.css"/>
+		<script src="__PUBLIC__/zhonghua/js/jquery.min.js"></script> 
+		<script>
+        (function(win,doc){
+            function change(){
+                doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            }
+            change();
+            win.addEventListener('resize',change,false);
+        })(window,document);
+    </script>
+	</head>
+	<body class="zhlh-manual">
+		<div style="width:90%; margin:0 auto">
+			<img src="__PUBLIC__/zhonghua/images/1-2.png" style="display:block; float:left; width:14%;">
+			<div style="display:block; float:left; width:84%;">
+				<p class="introduce">
+					需先关注“中华财险石家庄中支”微信公众号，并填写手机号后，才能参与游戏；
+				</p>
+				
+				<p class="introduce" style="margin-top:0.5rem;">	活动倒计时后，即可在点击页面上的任意红包，每个红包都对应着不同的奖项，每个用户每天有两次机会分享给好友后，将会增加1次游戏机会。
+				</p>
+				<p class="introduce" style="margin-top:0.5rem;">	活动结束后，我们将在3个工作日内对活动中奖名单进行公布。
+				</p>
+				
+
+			</div> 
+			<div style="clear:both;"></div>		
+		</div>	
+		 
+		<img src="__PUBLIC__/zhonghua/images/settings.png" class="settings">
+	
+		<div class="wrap-list"> 
+		    <div class="wrap-list-table">
+			  一等奖：800元保险优惠礼 
+		    </div>
+		    <div class="wrap-list-table">
+			  二等奖：500元保险优惠礼
+		    </div>
+			<div class="wrap-list-table">
+			  三等奖：魅族水壶套装
+		    </div>			
+			<div class="wrap-list-table">
+			  四等奖：1000积分
+		    </div>
+			<div class="wrap-list-table">
+			  五等奖：200积分
+		    </div>
+			 
+		</div>		 
+		<div style="height:0.5rem"></div>
+	</body>
+    <include file="Application/Zhactivity/View/Zhonghua/share.html" />
+</html>

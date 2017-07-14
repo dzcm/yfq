@@ -1,0 +1,96 @@
+<html>
+<head>
+<meta name="save" content="history" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/rain.css" />
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<title>抢红包</title>
+</head>
+<script>
+        (function(win,doc){
+            function change(){
+                doc.documentElement.style.fontSize=20/320*doc.documentElement.clientWidth+'px';
+            }
+            change();
+            win.addEventListener('resize',change,false);
+        })(window,document);
+        </script>
+<script>
+function codefans(){
+       $("#three").fadeOut()
+     }
+     function codetwoin(){
+       $("#two").fadeIn()
+     }
+     function codetwoout(){
+       $("#two").fadeOut()
+     }
+     function codeonein(){
+       $("#one").fadeIn()
+     }
+     function codeoneout(){
+       $("#one").fadeOut()
+     }
+     function codewrapin(){
+       $("#page_rain").fadeIn()
+     }
+     setTimeout("codefans()",1300);
+     setTimeout("codetwoin()",1400);
+     setTimeout("codetwoout()",2300);
+     setTimeout("codeonein()",2400);
+     setTimeout("codeoneout()",3400);
+     setTimeout("snow()",3400);
+     setTimeout("codewrapin()",3600);
+var a =0;
+var Timerr = setInterval(aa,300);
+var removepackage = setInterval(function(){
+			for(var jj=0;jj<$('.div>div').size()/4;jj++){
+			$('.div>div').eq($('.div>div').size()-jj).remove();
+			}
+		},1000)
+function aa(){
+	for(var i=0;i<4;i++){
+	var m=parseInt(Math.random()*700+100);
+	var j2=parseInt(Math.random()*300+1200);
+	var j=parseInt(Math.random()*1600+000);
+	var j1=parseInt(Math.random()*300+300);
+	var n=parseInt(Math.random()*10+(-10));
+	$('.div').prepend('<div class="dd"></div>');
+	$('.div').children('div').eq(0).css({'left':j,'top':n});
+	$('.div').children('div').eq(0).animate({'left':j-j1,'top':$(window).height()+20},3000);
+	}
+	}
+$(document).on('touchstart', '.dd', function(){
+	$(this).css("background-position","0 -100px");
+	a++;
+	if(a == 5){
+		$(".chuai_box").show();
+		clearInterval(Timerr,20);
+		$(".div").removeClass("bg_1");
+		setTimeout(function(){
+			$(".div").addClass("bg_2");
+		},3000);
+	}
+}); 
+</script>
+<body>
+	<div class="num-img" id="three"></div>
+	<div class="num-img" id="two" style="display:none"></div>
+	<div class="num-img" id="one" style="display:none"></div>
+<div class="page_rain" id="page_rain" style="display:none">
+	<div class="div bg_1"></div>
+	<!--蒙层-->
+	<div class="chuai_box" style="display: none;">
+		<div class="chuai">
+			<p>常州克里斯特尔斯甜品店红包</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
